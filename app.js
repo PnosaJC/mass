@@ -15,7 +15,6 @@ if (!data?.items || !data?.recipes) {
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const NODE_WIDTH = 190;
 const NODE_HEIGHT = 72;
-const COLUMN_GAP = 30;
 const ROW_GAP = 148;
 const WORLD_MARGIN = 72;
 const MIN_SCALE = 0.012;
@@ -188,7 +187,7 @@ function setActiveSuggestion(index) {
 function buildTree(rootId) {
   const nodes = [];
   const branches = [];
-  const minimumSeparation = NODE_WIDTH + COLUMN_GAP;
+  const layers = [];
   let nextNodeNumber = 0;
   let maxDepth = 0;
 
@@ -198,13 +197,12 @@ function buildTree(rootId) {
       itemId,
       depth,
       children: [],
-      childOffsets: [],
-      leftContour: [0],
-      rightContour: [0],
       x: 0,
       y: WORLD_MARGIN + NODE_HEIGHT / 2 + depth * ROW_GAP,
     };
     nodes.push(node);
+    if (!layers[depth]) layers[depth] = [];
+    layers[depth].push(node);
     maxDepth = Math.max(maxDepth, depth);
 
     const recipe = recipeByOutput.get(itemId);
@@ -216,59 +214,22 @@ function buildTree(rootId) {
     const leftChild = createNode(recipe.ingredients[0], depth + 1, nextAncestors);
     const rightChild = createNode(recipe.ingredients[1], depth + 1, nextAncestors);
     node.children = [leftChild, rightChild];
-
-    const sharedDepth = Math.min(leftChild.rightContour.length, rightChild.leftContour.length);
-    let childSeparation = minimumSeparation;
-    for (let level = 0; level < sharedDepth; level += 1) {
-      childSeparation = Math.max(
-        childSeparation,
-        leftChild.rightContour[level] - rightChild.leftContour[level] + minimumSeparation,
-      );
-    }
-
-    const leftOffset = -childSeparation / 2;
-    const rightOffset = childSeparation / 2;
-    node.childOffsets = [leftOffset, rightOffset];
-
-    const childDepth = Math.max(leftChild.leftContour.length, rightChild.leftContour.length);
-    for (let level = 0; level < childDepth; level += 1) {
-      const leftEdges = [];
-      const rightEdges = [];
-
-      if (level < leftChild.leftContour.length) {
-        leftEdges.push(leftChild.leftContour[level] + leftOffset);
-        rightEdges.push(leftChild.rightContour[level] + leftOffset);
-      }
-      if (level < rightChild.leftContour.length) {
-        leftEdges.push(rightChild.leftContour[level] + rightOffset);
-        rightEdges.push(rightChild.rightContour[level] + rightOffset);
-      }
-
-      node.leftContour[level + 1] = Math.min(...leftEdges);
-      node.rightContour[level + 1] = Math.max(...rightEdges);
-    }
-
     branches.push({ parent: node, children: node.children });
     return node;
   }
 
   const root = createNode(rootId, 0, new Set());
-
-  function placeNode(node, x) {
-    node.x = x;
-    node.children.forEach((child, index) => placeNode(child, x + node.childOffsets[index]));
-  }
-  placeNode(root, 0);
-
-  const leftEdge = Math.min(...nodes.map((node) => node.x - NODE_WIDTH / 2));
-  const rightEdge = Math.max(...nodes.map((node) => node.x + NODE_WIDTH / 2));
-  const horizontalShift = WORLD_MARGIN - leftEdge;
-  nodes.forEach((node) => {
-    node.x += horizontalShift;
-  });
-
-  const worldWidth = rightEdge - leftEdge + WORLD_MARGIN * 2;
+  const largestLayer = Math.max(...layers.map((layer) => layer.length));
+  const worldWidth = largestLayer * NODE_WIDTH + WORLD_MARGIN * 2;
   const worldHeight = maxDepth * ROW_GAP + NODE_HEIGHT + WORLD_MARGIN * 2;
+
+  layers.forEach((layer) => {
+    const layerWidth = layer.length * NODE_WIDTH;
+    const startX = (worldWidth - layerWidth) / 2 + NODE_WIDTH / 2;
+    layer.forEach((node, index) => {
+      node.x = startX + index * NODE_WIDTH;
+    });
+  });
 
   return {
     root,
