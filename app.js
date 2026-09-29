@@ -15,6 +15,7 @@ if (!data?.items || !data?.recipes) {
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const NODE_WIDTH = 190;
 const NODE_HEIGHT = 72;
+const COLUMN_GAP = 30;
 const ROW_GAP = 148;
 const MAX_ROW_GAP = 640;
 const TARGET_TREE_ASPECT = 0.42;
@@ -271,7 +272,8 @@ function buildSharedGraph(rootId) {
 
   const maxDepth = layers.length - 1;
   const largestLayer = Math.max(...layers.map((layer) => layer.length));
-  const worldWidth = largestLayer * NODE_WIDTH + WORLD_MARGIN * 2;
+  const columnWidth = NODE_WIDTH + COLUMN_GAP;
+  const worldWidth = largestLayer * columnWidth + WORLD_MARGIN * 2;
   const desiredWorldHeight = worldWidth * TARGET_TREE_ASPECT;
   const adaptiveRowGap = maxDepth === 0
     ? ROW_GAP
@@ -280,10 +282,10 @@ function buildSharedGraph(rootId) {
   const worldHeight = maxDepth * rowGap + NODE_HEIGHT + WORLD_MARGIN * 2;
 
   layers.forEach((layer, depth) => {
-    const layerWidth = layer.length * NODE_WIDTH;
-    const startX = (worldWidth - layerWidth) / 2 + NODE_WIDTH / 2;
+    const layerWidth = layer.length * columnWidth;
+    const startX = (worldWidth - layerWidth) / 2 + columnWidth / 2;
     layer.forEach((node, index) => {
-      node.x = startX + index * NODE_WIDTH;
+      node.x = startX + index * columnWidth;
       node.y = WORLD_MARGIN + NODE_HEIGHT / 2 + depth * rowGap;
     });
   });
