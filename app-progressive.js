@@ -38,7 +38,7 @@ app.innerHTML = `
   <section class="hero" aria-labelledby="page-title">
     <p class="eyebrow">Splice smarter</p>
     <h1 id="page-title">Every recipe, from the top down.</h1>
-    <p class="hero-copy">Choose an item to reveal its direct recipe. Click either ingredient to unlock its own two-child recipe, one step at a time.</p>
+    <p class="hero-copy">Choose an item to reveal its direct recipe. Click either ingredient to expand its own two-child recipe, and click it again to hide that branch.</p>
 
     <form class="recipe-search" id="recipe-search" role="search" autocomplete="off">
       <div class="search-field">
@@ -66,11 +66,11 @@ app.innerHTML = `
       <div class="tree-toolbar">
         <div class="legend" aria-label="Tree legend">
           <span><i class="legend-dot selected"></i>Selected</span>
-          <span><i class="legend-dot recipe"></i>Unlocked</span>
-          <span><i class="legend-dot locked"></i>Click to unlock</span>
+          <span><i class="legend-dot recipe"></i>Expanded</span>
+          <span><i class="legend-dot collapsed"></i>Expand</span>
           <span><i class="legend-dot base"></i>Base</span>
         </div>
-        <p class="gesture-hint">Click nodes to unlock · Drag to move · Scroll to zoom</p>
+        <p class="gesture-hint">Click to expand or hide · Drag to move · Scroll to zoom</p>
         <div class="zoom-controls" aria-label="Tree zoom controls">
           <button id="zoom-out" type="button" aria-label="Zoom out">−</button>
           <button id="fit-tree" type="button">Fit</button>
@@ -79,7 +79,7 @@ app.innerHTML = `
       </div>
       <div class="tree-viewport" id="tree-viewport">
         <svg id="recipe-tree" role="img" aria-labelledby="tree-title tree-description">
-          <desc id="tree-description">A progressive top-down recipe graph. The selected item shows its two ingredients; activate a locked recipe node to reveal its own two ingredients.</desc>
+          <desc id="tree-description">A progressive top-down recipe graph. The selected item shows its two ingredients; activate a recipe node to show or hide its own two ingredients.</desc>
           <g id="tree-scene"></g>
         </svg>
       </div>
@@ -190,16 +190,21 @@ function setActiveSuggestion(index) {
 function buildSharedGraph(rootId) {
   const nodeByItem = new Map();
   const parentsByItem = new Map();
+  const columnWidth = NODE_WIDTH + COLUMN_GAP;
   let nextNodeNumber = 0;
 
-  function collectNode(itemId) {
+  function collectNode(itemId, layoutDepth) {
     if (nodeByItem.has(itemId)) return nodeByItem.get(itemId);
 
     const node = {
       key: `graph-node-${nextNodeNumber++}`,
       itemId,
       children: [],
-      encounterOrder: nextNodeNumber,
+      layoutChildren: [],
+      childOffsets: [],
+      leftContour: [0],
+      rightContour: [0],
+      layoutDepth,
       x: 0,
       y: 0,
     };
@@ -208,83 +213,83 @@ function buildSharedGraph(rootId) {
     const recipe = recipeByOutput.get(itemId);
     if (!recipe || !expandedItemIds.has(itemId)) return node;
 
-    node.children = recipe.ingredients.map((ingredientId) => {
-      const child = collectNode(ingredientId);
+    recipe.ingredients.forEach((ingredientId) => {
+      const isNewNode = !nodeByItem.has(ingredientId);
+      const child = collectNode(ingredientId, layoutDepth + 1);
+      node.children.push(child);
+      if (isNewNode) node.layoutChildren.push(child);
       if (!parentsByItem.has(ingredientId)) parentsByItem.set(ingredientId, new Set());
       parentsByItem.get(ingredientId).add(itemId);
-      return child;
     });
     return node;
   }
 
-  const root = collectNode(rootId);
+  const root = collectNode(rootId, 0);
   const nodes = [...nodeByItem.values()];
   const branches = nodes
     .filter((node) => node.children.length > 0)
     .map((parent) => ({ parent, children: parent.children }));
 
-  const visited = new Set();
-  const topologicalOrder = [];
-  function visit(node) {
-    if (visited.has(node.itemId)) return;
-    visited.add(node.itemId);
-    node.children.forEach(visit);
-    topologicalOrder.push(node);
-  }
-  visit(root);
-  topologicalOrder.reverse();
+  function measureSubtree(node) {
+    node.layoutChildren.forEach(measureSubtree);
+    if (node.layoutChildren.length === 0) return;
 
-  const depthByItem = new Map([[rootId, 0]]);
-  topologicalOrder.forEach((node) => {
-    const parentDepth = depthByItem.get(node.itemId) ?? 0;
-    node.children.forEach((child) => {
-      depthByItem.set(
-        child.itemId,
-        Math.max(depthByItem.get(child.itemId) ?? 0, parentDepth + 1),
-      );
-    });
-  });
-
-  const layers = [];
-  nodes.forEach((node) => {
-    const depth = depthByItem.get(node.itemId) ?? 0;
-    if (!layers[depth]) layers[depth] = [];
-    layers[depth].push(node);
-  });
-
-  const horizontalRank = new Map([[rootId, 0.5]]);
-  layers.forEach((layer, depth) => {
-    if (depth > 0) {
-      layer.sort((left, right) => {
-        const averageParentRank = (node) => {
-          const parents = [...(parentsByItem.get(node.itemId) ?? [])];
-          return parents.reduce((sum, parentId) => sum + (horizontalRank.get(parentId) ?? 0.5), 0)
-            / Math.max(parents.length, 1);
-        };
-        return averageParentRank(left) - averageParentRank(right)
-          || left.encounterOrder - right.encounterOrder;
-      });
+    if (node.layoutChildren.length === 1) {
+      const child = node.layoutChildren[0];
+      node.childOffsets = [0];
+      node.leftContour = [0, ...child.leftContour];
+      node.rightContour = [0, ...child.rightContour];
+      return;
     }
-    layer.forEach((node, index) => {
-      horizontalRank.set(node.itemId, (index + 0.5) / layer.length);
+
+    const [leftChild, rightChild] = node.layoutChildren;
+    const sharedDepth = Math.min(leftChild.rightContour.length, rightChild.leftContour.length);
+    let separation = columnWidth;
+    for (let level = 0; level < sharedDepth; level += 1) {
+      separation = Math.max(
+        separation,
+        leftChild.rightContour[level] - rightChild.leftContour[level] + columnWidth,
+      );
+    }
+
+    const offsets = [-separation / 2, separation / 2];
+    node.childOffsets = offsets;
+    node.leftContour = [0];
+    node.rightContour = [0];
+    const childDepth = Math.max(leftChild.leftContour.length, rightChild.leftContour.length);
+
+    for (let level = 0; level < childDepth; level += 1) {
+      const leftEdges = [];
+      const rightEdges = [];
+      node.layoutChildren.forEach((child, index) => {
+        if (level >= child.leftContour.length) return;
+        leftEdges.push(child.leftContour[level] + offsets[index]);
+        rightEdges.push(child.rightContour[level] + offsets[index]);
+      });
+      node.leftContour[level + 1] = Math.min(...leftEdges);
+      node.rightContour[level + 1] = Math.max(...rightEdges);
+    }
+  }
+
+  measureSubtree(root);
+
+  function placeSubtree(node, x) {
+    node.x = x;
+    node.y = WORLD_MARGIN + NODE_HEIGHT / 2 + node.layoutDepth * ROW_GAP;
+    node.layoutChildren.forEach((child, index) => {
+      placeSubtree(child, x + node.childOffsets[index]);
     });
+  }
+  placeSubtree(root, 0);
+
+  const leftEdge = Math.min(...nodes.map((node) => node.x - NODE_WIDTH / 2));
+  const rightEdge = Math.max(...nodes.map((node) => node.x + NODE_WIDTH / 2));
+  const horizontalShift = WORLD_MARGIN - leftEdge;
+  nodes.forEach((node) => {
+    node.x += horizontalShift;
   });
 
-  const maxDepth = layers.length - 1;
-  const largestLayer = Math.max(...layers.map((layer) => layer.length));
-  const columnWidth = NODE_WIDTH + COLUMN_GAP;
-  const worldWidth = largestLayer * columnWidth + WORLD_MARGIN * 2;
-  const worldHeight = maxDepth * ROW_GAP + NODE_HEIGHT + WORLD_MARGIN * 2;
-
-  layers.forEach((layer, depth) => {
-    const layerWidth = layer.length * columnWidth;
-    const startX = (worldWidth - layerWidth) / 2 + columnWidth / 2;
-    layer.forEach((node, index) => {
-      node.x = startX + index * columnWidth;
-      node.y = WORLD_MARGIN + NODE_HEIGHT / 2 + depth * ROW_GAP;
-    });
-  });
-
+  const levels = Math.max(...nodes.map((node) => node.layoutDepth)) + 1;
   return {
     root,
     nodes,
@@ -294,9 +299,9 @@ function buildSharedGraph(rootId) {
         .filter(([, parents]) => parents.size > 1)
         .map(([itemId]) => itemId),
     ),
-    levels: layers.length,
-    worldWidth,
-    worldHeight,
+    levels,
+    worldWidth: rightEdge - leftEdge + WORLD_MARGIN * 2,
+    worldHeight: (levels - 1) * ROW_GAP + NODE_HEIGHT + WORLD_MARGIN * 2,
   };
 }
 
@@ -370,30 +375,38 @@ function renderTree(rootId) {
     const isShared = graph.sharedItemIds.has(itemId);
     const hasRecipe = recipeByOutput.has(itemId);
     const isExpanded = expandedItemIds.has(itemId);
-    const canUnlock = hasRecipe && !isExpanded;
+    const canExpand = hasRecipe && !isExpanded;
+    const canHide = hasRecipe && isExpanded && !isRoot;
+    const canToggle = canExpand || canHide;
     const nodeStateClass = isRoot
       ? 'is-selected'
       : item.isBase
         ? 'is-base'
-        : canUnlock
-          ? 'is-locked'
+        : canExpand
+          ? 'is-collapsed'
           : 'is-recipe';
     const node = createSvgElement('g', {
-      class: `tree-node ${nodeStateClass} ${isShared ? 'is-shared' : ''}`,
+      class: `tree-node ${nodeStateClass} ${canToggle ? 'is-toggleable' : ''} ${isShared ? 'is-shared' : ''}`,
       'data-item-id': itemId,
-      'data-recipe-state': item.isBase ? 'base' : isExpanded ? 'open' : 'locked',
+      'data-recipe-state': item.isBase ? 'base' : isExpanded ? 'expanded' : 'collapsed',
       transform: `translate(${position.x - NODE_WIDTH / 2} ${position.y - NODE_HEIGHT / 2})`,
-      role: canUnlock ? 'button' : 'img',
-      tabindex: canUnlock ? '0' : '-1',
+      role: canToggle ? 'button' : 'img',
+      tabindex: canToggle ? '0' : '-1',
       'aria-label': item.isBase
         ? `${item.name}, base item.`
-        : canUnlock
-          ? `${item.name}, recipe locked. Activate to reveal its two ingredients.`
-          : `${item.name}, recipe unlocked.`,
+        : canExpand
+          ? `${item.name}, recipe collapsed. Activate to expand its two ingredients.`
+          : canHide
+            ? `${item.name}, recipe expanded. Activate to hide its ingredients.`
+            : `${item.name}, selected recipe expanded.`,
     });
 
     const title = createSvgElement('title');
-    title.textContent = canUnlock ? `Unlock ${item.name} recipe` : item.name;
+    title.textContent = canExpand
+      ? `Expand ${item.name} recipe`
+      : canHide
+        ? `Hide ${item.name} recipe`
+        : item.name;
     node.append(title, createSvgElement('rect', { class: 'node-card', width: NODE_WIDTH, height: NODE_HEIGHT, rx: 14 }));
 
     if (item.image) {
@@ -416,22 +429,25 @@ function renderTree(rootId) {
     const descriptor = createSvgElement('text', { class: 'node-type', x: 66, y: 58 });
     descriptor.textContent = item.isBase
       ? 'BASE ITEM'
-      : isExpanded
-        ? 'RECIPE UNLOCKED'
-        : 'CLICK TO UNLOCK';
+      : isRoot
+        ? 'RECIPE'
+        : isExpanded
+          ? 'HIDE RECIPE'
+          : 'EXPAND RECIPE';
     node.append(descriptor);
 
-    if (canUnlock) {
-      const unlockRecipe = () => {
-        expandedItemIds.add(itemId);
+    if (canToggle) {
+      const toggleRecipe = () => {
+        if (isExpanded) expandedItemIds.delete(itemId);
+        else expandedItemIds.add(itemId);
         renderTree(selectedId);
       };
       node.addEventListener('pointerdown', (event) => event.stopPropagation());
-      node.addEventListener('click', unlockRecipe);
+      node.addEventListener('click', toggleRecipe);
       node.addEventListener('keydown', (event) => {
         if (event.key === 'Enter' || event.key === ' ') {
           event.preventDefault();
-          unlockRecipe();
+          toggleRecipe();
         }
       });
     }
@@ -460,9 +476,9 @@ function renderTree(rootId) {
   }
 
   const baseCount = graph.nodes.filter((node) => itemById.get(node.itemId).isBase).length;
-  const lockedCount = graph.nodes.filter((node) =>
+  const collapsedCount = graph.nodes.filter((node) =>
     recipeByOutput.has(node.itemId) && !expandedItemIds.has(node.itemId)).length;
-  treeMeta.innerHTML = `<strong>${graph.nodes.length}</strong> visible items <i></i> <strong>${graph.levels}</strong> levels <i></i> <strong>${lockedCount}</strong> recipes to unlock <i></i> <strong>${baseCount}</strong> base items`;
+  treeMeta.innerHTML = `<strong>${graph.nodes.length}</strong> visible items <i></i> <strong>${graph.levels}</strong> levels <i></i> <strong>${collapsedCount}</strong> recipes to expand <i></i> <strong>${baseCount}</strong> base items`;
   requestAnimationFrame(fitTree);
 }
 
