@@ -1,12 +1,12 @@
 # Growtopia Recipe Tree
 
-A dependency-free static website that turns a plain-text Growtopia recipe list into a searchable, fully expanded visual dependency tree.
+A dependency-free static website that turns a plain-text Growtopia recipe list into a searchable, progressively unlocked visual dependency graph.
 
 ## Use it
 
 Open `index.html` directly in a browser. The generated JavaScript data file means no local server is required.
 
-Search for any item and select it to display every known dependency. The selected item appears at the top, recipe ingredients branch downward, and base items end each branch. Drag to pan, scroll to zoom, or use the viewport controls.
+Search for an item to display its two direct ingredients. Recipe children begin locked; click one to reveal its own two ingredients and continue one step at a time. Repeated seeds render once with every applicable recipe connected to the shared node. Drag to pan, scroll to zoom, or use the viewport controls.
 
 ## Update recipes
 

@@ -17,8 +17,6 @@ const NODE_WIDTH = 190;
 const NODE_HEIGHT = 72;
 const COLUMN_GAP = 30;
 const ROW_GAP = 148;
-const MAX_ROW_GAP = 640;
-const TARGET_TREE_ASPECT = 0.42;
 const WORLD_MARGIN = 72;
 const MIN_SCALE = 0.012;
 const MAX_SCALE = 2.2;
@@ -40,7 +38,7 @@ app.innerHTML = `
   <section class="hero" aria-labelledby="page-title">
     <p class="eyebrow">Splice smarter</p>
     <h1 id="page-title">Every recipe, from the top down.</h1>
-    <p class="hero-copy">Choose an item to reveal its complete splice dependency tree. Every branch is expanded automatically.</p>
+    <p class="hero-copy">Choose an item to reveal its direct recipe. Click either ingredient to unlock its own two-child recipe, one step at a time.</p>
 
     <form class="recipe-search" id="recipe-search" role="search" autocomplete="off">
       <div class="search-field">
@@ -68,10 +66,11 @@ app.innerHTML = `
       <div class="tree-toolbar">
         <div class="legend" aria-label="Tree legend">
           <span><i class="legend-dot selected"></i>Selected</span>
-          <span><i class="legend-dot recipe"></i>Recipe</span>
+          <span><i class="legend-dot recipe"></i>Unlocked</span>
+          <span><i class="legend-dot locked"></i>Click to unlock</span>
           <span><i class="legend-dot base"></i>Base</span>
         </div>
-        <p class="gesture-hint">Drag to move · Scroll to zoom</p>
+        <p class="gesture-hint">Click nodes to unlock · Drag to move · Scroll to zoom</p>
         <div class="zoom-controls" aria-label="Tree zoom controls">
           <button id="zoom-out" type="button" aria-label="Zoom out">−</button>
           <button id="fit-tree" type="button">Fit</button>
@@ -80,7 +79,7 @@ app.innerHTML = `
       </div>
       <div class="tree-viewport" id="tree-viewport">
         <svg id="recipe-tree" role="img" aria-labelledby="tree-title tree-description">
-          <desc id="tree-description">A top-down visual tree of the selected item and all ingredients required to splice it.</desc>
+          <desc id="tree-description">A progressive top-down recipe graph. The selected item shows its two ingredients; activate a locked recipe node to reveal its own two ingredients.</desc>
           <g id="tree-scene"></g>
         </svg>
       </div>
@@ -105,6 +104,7 @@ const scene = document.querySelector('#tree-scene');
 let suggestionItems = [];
 let activeSuggestion = -1;
 let selectedId = null;
+let expandedItemIds = new Set();
 let currentLayout = null;
 let view = { scale: 1, x: 0, y: 0 };
 let dragState = null;
@@ -206,7 +206,7 @@ function buildSharedGraph(rootId) {
     nodeByItem.set(itemId, node);
 
     const recipe = recipeByOutput.get(itemId);
-    if (!recipe) return node;
+    if (!recipe || !expandedItemIds.has(itemId)) return node;
 
     node.children = recipe.ingredients.map((ingredientId) => {
       const child = collectNode(ingredientId);
@@ -274,19 +274,14 @@ function buildSharedGraph(rootId) {
   const largestLayer = Math.max(...layers.map((layer) => layer.length));
   const columnWidth = NODE_WIDTH + COLUMN_GAP;
   const worldWidth = largestLayer * columnWidth + WORLD_MARGIN * 2;
-  const desiredWorldHeight = worldWidth * TARGET_TREE_ASPECT;
-  const adaptiveRowGap = maxDepth === 0
-    ? ROW_GAP
-    : (desiredWorldHeight - NODE_HEIGHT - WORLD_MARGIN * 2) / maxDepth;
-  const rowGap = Math.max(ROW_GAP, Math.min(MAX_ROW_GAP, adaptiveRowGap));
-  const worldHeight = maxDepth * rowGap + NODE_HEIGHT + WORLD_MARGIN * 2;
+  const worldHeight = maxDepth * ROW_GAP + NODE_HEIGHT + WORLD_MARGIN * 2;
 
   layers.forEach((layer, depth) => {
     const layerWidth = layer.length * columnWidth;
     const startX = (worldWidth - layerWidth) / 2 + columnWidth / 2;
     layer.forEach((node, index) => {
       node.x = startX + index * columnWidth;
-      node.y = WORLD_MARGIN + NODE_HEIGHT / 2 + depth * rowGap;
+      node.y = WORLD_MARGIN + NODE_HEIGHT / 2 + depth * ROW_GAP;
     });
   });
 
@@ -373,17 +368,32 @@ function renderTree(rootId) {
     const position = treeNode;
     const isRoot = treeNode === graph.root;
     const isShared = graph.sharedItemIds.has(itemId);
+    const hasRecipe = recipeByOutput.has(itemId);
+    const isExpanded = expandedItemIds.has(itemId);
+    const canUnlock = hasRecipe && !isExpanded;
+    const nodeStateClass = isRoot
+      ? 'is-selected'
+      : item.isBase
+        ? 'is-base'
+        : canUnlock
+          ? 'is-locked'
+          : 'is-recipe';
     const node = createSvgElement('g', {
-      class: `tree-node ${isRoot ? 'is-selected' : item.isBase ? 'is-base' : 'is-recipe'} ${isShared ? 'is-shared' : ''}`,
+      class: `tree-node ${nodeStateClass} ${isShared ? 'is-shared' : ''}`,
       'data-item-id': itemId,
+      'data-recipe-state': item.isBase ? 'base' : isExpanded ? 'open' : 'locked',
       transform: `translate(${position.x - NODE_WIDTH / 2} ${position.y - NODE_HEIGHT / 2})`,
-      role: 'button',
-      tabindex: '0',
-      'aria-label': `${item.name}, ${item.isBase ? 'base item' : 'has a recipe'}. Show this item as the root.`,
+      role: canUnlock ? 'button' : 'img',
+      tabindex: canUnlock ? '0' : '-1',
+      'aria-label': item.isBase
+        ? `${item.name}, base item.`
+        : canUnlock
+          ? `${item.name}, recipe locked. Activate to reveal its two ingredients.`
+          : `${item.name}, recipe unlocked.`,
     });
 
     const title = createSvgElement('title');
-    title.textContent = `Explore ${item.name}`;
+    title.textContent = canUnlock ? `Unlock ${item.name} recipe` : item.name;
     node.append(title, createSvgElement('rect', { class: 'node-card', width: NODE_WIDTH, height: NODE_HEIGHT, rx: 14 }));
 
     if (item.image) {
@@ -404,18 +414,27 @@ function renderTree(rootId) {
     });
 
     const descriptor = createSvgElement('text', { class: 'node-type', x: 66, y: 58 });
-    descriptor.textContent = item.isBase ? 'BASE ITEM' : item.tier ? `TIER ${item.tier}` : 'RECIPE';
+    descriptor.textContent = item.isBase
+      ? 'BASE ITEM'
+      : isExpanded
+        ? 'RECIPE UNLOCKED'
+        : 'CLICK TO UNLOCK';
     node.append(descriptor);
 
-    const reroot = () => selectItem(itemId, { focusTree: false });
-    node.addEventListener('pointerdown', (event) => event.stopPropagation());
-    node.addEventListener('click', reroot);
-    node.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        reroot();
-      }
-    });
+    if (canUnlock) {
+      const unlockRecipe = () => {
+        expandedItemIds.add(itemId);
+        renderTree(selectedId);
+      };
+      node.addEventListener('pointerdown', (event) => event.stopPropagation());
+      node.addEventListener('click', unlockRecipe);
+      node.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          unlockRecipe();
+        }
+      });
+    }
     scene.append(node);
   });
 
@@ -440,8 +459,10 @@ function renderTree(rootId) {
     formula.textContent = 'No recipe in the current data · treated as a base item';
   }
 
-  const baseCount = graph.nodes.filter((node) => node.children.length === 0).length;
-  treeMeta.innerHTML = `<strong>${graph.nodes.length}</strong> unique items <i></i> <strong>${graph.levels}</strong> levels <i></i> <strong>${graph.sharedItemIds.size}</strong> shared seeds <i></i> <strong>${baseCount}</strong> base items`;
+  const baseCount = graph.nodes.filter((node) => itemById.get(node.itemId).isBase).length;
+  const lockedCount = graph.nodes.filter((node) =>
+    recipeByOutput.has(node.itemId) && !expandedItemIds.has(node.itemId)).length;
+  treeMeta.innerHTML = `<strong>${graph.nodes.length}</strong> visible items <i></i> <strong>${graph.levels}</strong> levels <i></i> <strong>${lockedCount}</strong> recipes to unlock <i></i> <strong>${baseCount}</strong> base items`;
   requestAnimationFrame(fitTree);
 }
 
@@ -476,6 +497,7 @@ function selectItem(itemId, options = {}) {
   const item = itemById.get(itemId);
   if (!item) return;
   selectedId = itemId;
+  expandedItemIds = recipeByOutput.has(itemId) ? new Set([itemId]) : new Set();
   searchInput.value = item.name;
   clearSearch.hidden = false;
   closeSuggestions();
