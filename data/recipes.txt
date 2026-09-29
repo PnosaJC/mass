@@ -1,0 +1,430 @@
+Tier 1 Items
+Dirt
+Lava
+Rock
+Cave Background
+Sand
+Martian Soil
+Mars Rock
+Obelisk
+Sandstone Wall
+Boulder
+Garbage
+Ocean Rock
+Magic Eg
+Deep Sand
+Deep Rock
+Tier 2 Items
+Door = Dirt + Cave Background
+Grass = Dirt + Rock
+Wood Block = Dirt + Lava
+Glass Pane = Rock + Lava
+Sign = Cave Background + Rock
+Lava Rock = Lava + Cave Background
+Martian Tree = Martian Soil + Mars Rock
+Tier 3 Items
+Wooden Background = Grass + Door
+Pointy Sign = Door + Sign
+Crappy Sign = Door + Dirt
+Daisy = Grass + Dirt
+Wooden Platform = Wood Block + Grass
+Rock Background = Rock + Door
+Bricks = Rock + Grass
+Rose = Grass + Lava
+Super Crate Box = Dirt + Sign
+Mushroom = Cave Background + Grass
+Cargo Shorts = Dirt + Wood Block
+Amber Glass = Dirt + Glass Pane
+Happy Joy Plaque = Door + Cave Background
+Torch = Sign + Lava
+Wheat = Grass + Sand
+Terracotta Pot = Martian Tree + Martian Soil
+Tier 4 Items
+Danger Sign = Lava + Pointy Sign
+Window = Glass Pane + Wooden Background
+Shallot Mustache = Mushroom + Grass
+Grey Block = Bricks + Rock
+Black Block = Bricks + Cave Background
+White Block = Bricks + Mushroom
+Red Block = Bricks + Lava
+Yellow Block = Bricks + Daisy
+Green Block = Bricks + Grass
+Aqua Block = Bricks + Glass Pane
+Brown Block = Bricks + Dirt
+Poppy = Rose + Daisy
+Flowery Wallpaper = Wooden Background + Daisy
+Wooden Table = Wooden Platform + Wood Block
+Messy Brown Hair = Crappy Sign + Grass
+Mud Glob = Daisy + Dirt
+Stinky Sock = Mushroom + Dirt
+Tan Shirt = Rock Background + Dirt
+Cliffside = Rock Background + Boulder
+Tier 5 Items
+Dungeon Door = Door + Window
+Shades = Black Block + Glass Pane
+Green Shirt = Grass + Green Block
+Tuxedo = Grey Block + Rose
+Brown Shoes = Cave Background + Brown Block
+Boots = Rock + Black Block
+Red Hair = Grass + Red Block
+Jeans = Aqua Block + Rock
+Wooden Window = Window + Wooden Background
+Top Hat = Black Block + Mushroom
+Brown Hair = Dirt + Brown Block
+Black Pants = Door + Black Block
+Green Skirt = Poppy + Green Block
+Blonde Bombshell = Yellow Block + Grass
+Toilet = Crappy Sign + Brown Block
+Painting: Yerfdog = Wooden Background + White Block
+Painting: Dink Duck = Yellow Block + Wooden Background
+Brick Background = Bricks + Black Block
+Red Riding Hood = Red Block + Mushroom
+Hot Head = Lava + Red Block
+Cyclopean Visor = Window + Red Block
+Biker Stache = Brown Block + Grass
+X-Ray Specs = Glass Pane + White Block
+Gold-Rimmed Glasses = Yellow Block + Window
+Death Spikes = Danger Sign + Rock Background
+Orange Block = Bricks + Poppy
+Bush = Poppy + Rose
+Stripey Wallpaper = Green Block + Aqua Block
+Referee Shirt = Black Block + White Block
+Flashlight = Black Block + Yellow Block
+Rooster Hat = Yellow Block + White Block
+Santa Hat = Red Block + White Block
+Santa Pants = Lava + Grey Block
+Santa Vest = Lava + White Block
+Evil Bricks = Lava + Black Block
+Long Brown Hair = Wooden Table + Grass
+Stone Wall = Grey Block + Rock
+Lovely Pink Dress = Flowery Wallpaper + Mushroom
+Glass Block = Aqua Block + Glass Pane
+Sheet Music: Blank = Super Crate Box + White Block
+Red Bricks = Red Block + Bricks
+Pencil = Yellow Block + Wood Block
+Worthless Rags = Dirt + Mud Glob
+Barn Block = Super Crate Box + Red Block
+Red Wood Wall = Red Block + Wooden Background
+Tier 6 Items
+Baseball Cap = Bush + Wooden Platform
+Portcullis = Dungeon Door + Death Spikes
+Olde Timey Radio = Toilet + Dungeon Door
+Spikey Hair = Death Spikes + Yellow Block
+Afro = Bush + Black Block
+Patent Leather Shoes = Brick Background + Grey Block
+Green Blouse = Bush + Green Block
+Briefcase = Brown Block + Stripey Wallpaper
+Sword = Death Spikes + Rock Background
+Red Coat = Red Block + Bush
+Devil Horns = Lava + Death Spikes
+Big Glasses = Window + Wooden Window
+Blueberry = Bush + Mushroom
+Burglar Mask = Cave Background + Brick Background
+Froghat = Aqua Block + Bush
+Wooden Chair = Wooden Platform + Toilet
+House Entrance = Dungeon Door + Door
+Bathtub = Toilet + White Block
+White Beard = White Block + Bush
+Asbestos Boots = Evil Bricks + Yellow Block
+Cuzco Wall Mount = Painting: Yerfdog + Dungeon Door
+Polka Dot Block = White Block + Orange Block
+Checker Wallpaper = Window + Evil Bricks
+Viking Helmet = Stone Wall + Pointy Sign
+Pigtails = Orange Block + Daisy
+Cactus = Death Spikes + Bush
+Dresser = Wooden Table + Dungeon Door
+Big Old Sideways Arrow = Orange Block + Pointy Sign
+Sheet Music: Piano Note = Sheet Music: Blank + Green Block
+Sheet Music: Drums = Sheet Music: Blank + Brown Block
+Barrel = Dungeon Door + Super Crate Box
+Grimstone = Grass + Stone Wall
+Biohazard Sign = Danger Sign + Orange Block
+Gambler's Visor = Green Block + Glass Block
+Water Bucket = Toilet + Aqua Block
+Barn Door = Door + Barn Block
+Tomato = Red Bricks + Mud Glob
+Sidewalk = Red Bricks + Grey Block
+Exclamation Sign = Barn Block + Martian Tree
+Tier 7 Items
+Just One Boxing Glove = Red Block + Blueberry
+Pickaxe = Portcullis + Cave Background
+Brainwave Capacitor = Olde Timey Radio + Yellow Block
+TV Head = Olde Timey Radio + Wood Block
+Blue Block = Bricks + Blueberry
+Picket Fence = Wooden Chair + White Block
+Long Black Hair = Black Block + Portcullis
+Bed = Wooden Chair + Mushroom
+Snorkel = Bathtub + Glass Pane
+Clown Nose = Tomato + Happy Joy Plaque
+Clown Pants = Polka Dot Block + Happy Joy Plaque
+Rubber Ducky = Bathtub + Painting: Dink Duck
+Tie Dyed Shirt = Polka Dot Block + Checker Wallpaper
+Sexy Boxers = Polka Dot Block + Rose
+Monster Feet = Devil Horns + Green Block
+Bubble Wrap = Blueberry + Glass Pane
+Sandstone = Cactus + Dirt
+Plumbing = Bathtub + Green Block
+Big Old Down Arrow = Pointy Sign + Devil Horns
+Sheet Music: Sharp Piano = Sheet Music: Piano Note + Death Spikes
+Sheet Music: Flat Piano = Sheet Music: Piano Note + Rock
+Secret Passage = Wood Block + Big Old Sideways Arrow
+Lattice Background = Wooden Chair + Wooden Background
+Tangram Block (A to L) = Checker Wallpaper + Grey Block
+Baseball Bat = House Entrance + Sign
+Apple = Red Bricks + Blueberry
+School Desk = Orange Block + Wooden Chair
+Grey Hair Bun = Olde Timey Radio + Grey Block
+Zombie-Stompin' Boots = Grimstone + Death Spikes
+Barky's Mask = Barrel + Painting: Yerfdog
+Wrought-Iron Fence = Portcullis + Pencil
+Seaweed = Bush + Water Bucket
+Ancient Stone Gate = Sandstone Wall + Portcullis
+Street Sign = Pointy Sign + Sidewalk
+Tenement Building = House Entrance + Garbage
+Gargoyle = Grimstone + Devil Horns
+Olde-Timey Hat = Olde Timey Radio + Brown Block
+Tier 8 Items
+Ski Cap = Blue Block + Mushroom
+Purple Block = Red Block + Blue Block
+Note Block = Blue Block + Olde Timey Radio
+Checkered Pajamas = Checker Wallpaper + Bed
+Peg Leg = Rubber Ducky + Wooden Table
+Music Box = Rubber Ducky + Olde Timey Radio
+Dreamstone Block = Bed + Orange Block
+Das Red Balloon = Bubble Wrap + Red Block
+Blue Star Wallpaper = Blue Block + Amber Glass
+Wall Like An Egyptian = Sandstone + Mud Glob
+Backpack = Bed + Super Crate Box
+Red Sweatpants = Big Old Down Arrow + White Block
+Sheet Music: Bass Note = Sheet Music: Blank + Blue Block
+Copper Plumbing = Plumbing + Orange Block
+Granite Block = Sandstone + Stone Wall
+Iron Bars = Plumbing + Death Spikes
+Acid = Plumbing + Cactus
+Antidote = Blueberry + Apple
+Military Radio = Biohazard Sign + Sheet Music: Sharp Piano
+Screen Door = Lattice Background = Door
+Pitchfork = Wrought-Iron Fence + Crappy Sign
+Sugar Cane = Seaweed + Happy Joy Plaque
+Secret Of Growtopia = Sheet Music: Blank + Secret Passage
+Western Building = Sand + Tenement Building
+Rustic Fence = Crappy Sign + Picket Fence
+For Sale Sign = Street Sign + Red Block
+Gem Sign = Street Sign + Yellow Block
+Coral = Seaweed + Ocean Rock
+Tier 9 Items
+Purple Thong = Purple Block + Danger Sign
+Purple Bikini Top = Purple Block + Rose
+Steel Block = Purple Block + Portcullis
+Purple Mohawk = Picket Fence + Purple Block
+Rainbow Block = Purple Block + Orange Block
+Monocle = Music Box + Window
+Poodle Skirt = Das Red Balloon + Dreamstone Block
+Cloudstone Block = Dreamstone Block + Aqua Block
+Lollipop = Purple Block + Blueberry
+Table Lamp = Blue Star Wallpaper + Wooden Table
+Race Start Flag = Blue Star Wallpaper + Pointy Sign
+Big Old Up Arrow = Das Red Balloon + Pointy Sign
+Sheet Music: Sharp Bass = Sheet Music: Bass Note + Death Spikes
+Sheet Music: Flat Bass = Sheet Music: Bass Note + Rock
+Marble Block = Granite Block + Dreamstone Block
+Jail Door = Iron Bars + Portcullis
+Toxic Waste Barrel = Acid + Barrel
+Card Block = Tangram Block + Das Red Balloon
+Showgirl Leggings = Blue Star Wallpaper + Lattice Background
+Showgirl Headdress = Blue Star Wallpaper + Portcullis
+Neon Lights = Glass Block + Purple Block
+Velvet Rope = Copper Plumbing + Big Old Sideways Arrow
+Western Banner = Western Building + Sign
+Saloon Doors = Western Building + Door
+Cutaway Building = Western Building + Tenement Building
+Cash Register = Military Radio + Gargoyle
+Display Box = Glass Block + Music Box
+Ducky Pajama Pants = Rubber Ducky + Dreamstone Block
+Hospital Bed = Bed + Screen Door
+Purple Stuff = Coral + Purple Block
+Orange Stuff = Coral + Orange Block
+Tier 10 Items
+Boombox = Steel Block + Black Block
+Jetpack = Lava + Steel Block
+Robot Wants Dubstep = Note Block + Steel Block
+Golden Block = Steel Block + Yellow Block
+The Darkness = Steel Block + Evil Bricks
+Magic Bacon Wallpaper = Rainbow Block + House Entrance
+Plate Mail = Portcullis + Steel Block
+Ice = Cloudstone Block + Glass Pane
+Race End Flag = Race Start Flag + Checker Wallpaper
+Checkpoint = Cloudstone Block + Bubble Wrap
+Blue Wristband = Race Start Flag + Blueberry
+Ladder = Big Old Up Arrow + Wooden Platform
+Bookcase = Rainbow Block + Dresser
+Red Sportsball Jersey = Big Old Up Arrow + White Block
+Pinball Bumper = Blue Star Wallpaper + Steel Block
+Steel Girder = Steel Block + Lattice Background
+Mailbox = Steel Block + Big Old Up Arrow
+Clouds = Cloudstone Block + Glass Block
+Password Door = Jail Door + Steel Block
+Roulette Wheel = Card Block + Cuzco Wall Mount
+Farmgirl Hair = Velvet Rope + Poppy
+Science Station = Toxic Waste Barrel + Military Radio
+Streetlamp = Neon Lights + Plumbing
+Cowboy Hat = Sand + Big Old Up Arrow
+Sheriff's Vest = Jail Door + Blue Star Wallpaper
+Shop Sign = Western Banner + Pastel Blue Block
+Ducky Pajama Top = Rubber Ducky + Cloudstone Block
+Television = Olde Timey Radio + Saloon Doors
+Couch = Hospital Bed + Stripey Wallpaper
+Winterfest Items
+Winter Gift = Sheet Music: Flat Bass + Sheet Music: Bass Note
+Tier 11 Items
+Disco Ball = Window + Boombox
+Fireplace = Evil Bricks + Golden Block
+Ninja Mask = The Darkness + Black Block
+Ninja Tights = The Darkness + Purple Block
+Ninja Vest = The Darkness + Blue Block
+Ninja Slippers = The Darkness + Brown Block
+High Tech Wall = Robot Wants Dubstep + Black Block
+High Tech Block = Robot Wants Dubstep + Grey Block
+Fishnet Stockings = The Darkness + Boombox
+Art Wall = Magic Bacon Wallpaper + Rainbow Block
+Venus Guytrap = Magic Bacon Wallpaper + Daisy
+Air Robinsons = Race End Flag + Bubble Wrap
+Baneful Mask = The Darkness + Plumbing
+Fishbowl = Ice + Wooden Window
+GrowBeats Headphones = Boombox + Note Block
+Pinball Sproinger = Pinball Bumper + Mushroom
+Treasure Chest = Golden Block + Dresser
+Golden Sword = Golden Block + Picket Fence
+Elvish Longbow = Ladder + Big Old Sideways Arrow
+Blackrock Wall = The Darkness + Lava Rock
+Cybernetic Arm = Steel Girder + Boombox
+Traffic Barricade = Table Lamp + Ladder
+Flipping Coin = Golden Block + Sheet Music: Drums
+Showgirl Top = Blue Star Wallpaper + Ice
+Chicken = Rubber Ducky + Clouds
+Blue Mailbox = Mailbox + Blue Block
+Fire Escape = Steel Girder + Ladder
+Microwave = Television + Toxic Waste Barrel
+Colored Wallpapers
+Red Wallpaper = Red Block + Magic Bacon Wallpaper
+Orange Wallpaper = Orange Block + Magic Bacon Wallpaper
+Yellow Wallpaper = Yellow Block + Magic Bacon Wallpaper
+Green Wallpaper = Green Block + Magic Bacon Wallpaper
+Aqua Wallpaper = Aqua Block + Magic Bacon Wallpaper
+Blue Wallpaper = Blue Block + Magic Bacon Wallpaper
+Purple Wallpaper = Purple Block + Magic Bacon Wallpaper
+Grey Wallpaper = Grey Block + Magic Bacon Wallpaper
+White Wallpaper = White Block + Magic Bacon Wallpaper
+Black Wallpaper = Black Block + Magic Bacon Wallpaper
+Wizard Hats
+Wizard Hat = Bookcase + Dreamstone Block
+Wizard Hat trees can bear any of the five hats listed below:
+
+Wizard Hat
+Witch Hat
+Funk Wizard Hat
+Cursed Wizard Hat
+Merlin Hat
+Winterfest Items
+Snowy Rocks = Ice + Rock
+Tier 12 Items
+Ruby Slippers = Red Block + Disco Ball
+Mystery Block = Steel Block + Disco Ball
+Golden Halo = Yellow Block + Disco Ball
+Fairy Crown = Grass + Disco Ball
+Fairy Dress = Aqua Block + Disco Ball
+Fairy Skirt = Daisy + Disco Ball
+Fairy Slippers = Poppy + Disco Ball
+Fairy Wings = Flowery Wallpaper + Disco Ball
+Fairy Wand = Wood Block + Disco Ball
+Sack O' Joy = Note Block + Disco Ball
+Saturday Night Vest = Golden Block + Disco Ball
+White Bellbottoms = White Block + Disco Ball
+Rainbow Wig = Rainbow Block + Fireplace
+Cannon = Fireplace + Black Block
+Chandelier = Fireplace + Golden Block
+Stove = Lava Rock + High Tech Block
+Time-Space Rupture = High Tech Wall + House Entrance
+Space Helmet = Fishbowl + Checkpoint
+Orange Portal = High Tech Wall + Orange Block
+Blue Portal = High Tech Block + Blue Block
+Dragon Gate = Venus Guytrap + Portcullis
+Wizard's Robe = Purple Wallpaper + Happy Joy Plaque
+Chalkboard = Grey Wallpaper + Painting: Yerfdog
+Crimson Eagle Wings = Red Wallpaper + Blue Wallpaper
+Skeleton = Grey Wallpaper + Ice
+Hammer Pants = Purple Wallpaper + Tangram Block (any)
+Combat Vest = Green Wallpaper + Aqua Wallpaper
+Dice Block = Art Wall + Grey Block
+Slot Machine = Roulette Wheel + Yellow Wallpaper
+Zeta Reticulant Mask = Military Radio + Grey Wallpaper
+Refrigerator = Ice + Treasure Chest
+Sproingy Eyes = Apple + Pinball Sproinger
+Overalls = Barrel + Blue Wallpaper
+Achievement Block = Art Wall + Wood Block
+War Paint = Tomato + Fire Escape
+Fire Hydrant = Red Wallpaper + Water Bucket
+Gothic Building = Orange Wallpaper + Blackrock Wall
+Campfire = Fireplace + Cactus
+Open Sign = Street Sign + White Wallpaper
+Meaty Apron = Chicken + Brick Background
+Surgical Tools
+Surgical Tool = High Tech Wall + Biohazard Sign
+Surgical Tools will bear any of the following:
+
+Surgical Anesthetic
+Surgical Antibiotics
+Surgical Antiseptic
+Surgical Scalpel
+Surgical Splint
+Surgical Sponge
+Surgical Stitches
+Winterfest Items
+Winter Scarf = Snowy Rocks + Aqua Block
+Tier 13 Items
+Pirate Hat = Cannon + Mushroom
+Eyepatch = Cannon + Cuzco Wall Mount
+Hoop Earrings = Golden Halo + Poppy
+Blueberry Pie = Stove + Blueberry
+Chef Hat = Stove + Mushroom
+Apron = Stove + Checker Wallpaper
+Spatula = Stove + Picket Fence
+Cigar = Time-Space Rupture + Lava Rock
+TommyGun = Time-Space Rupture + Death Spikes
+Pinstripe Pants = Time-Space Rupture + Stripey Wallpaper
+Pinstripe Suit = Time-Space Rupture + Rose
+Fedora = Time-Space Rupture + Black Block
+Dame's Fedora = Time-Space Rupture + Poppy
+Blue Headband = Golden Halo + Race Start Flag
+Victrola = Time-Space Rupture + Olde Timey Radio
+Art Deco Block = Time-Space Rupture + Grey Block
+Flapper Dress = Time-Space Rupture + Lava
+Flapper Headband = Time-Space Rupture + Daisy
+Bulletin Board = Lattice Background + Chalkboard
+Headsman's Axe = Pencil + Dragon Gate
+Tombstone = Skeleton + Granite Block
+Ripper Wings = Chandelier + Devil Horns
+Flaming Skull Mask = Skeleton + Torch
+Cow = Refrigerator + Brown Block
+Laboratory = Refrigerator + Biohazard Sign
+Parasol = Clouds + Fire Hydrant
+Straw Hat = Wheat + Golden Halo
+Tramsmog Crystal = Achievement Block + Purple Block
+Mannequin = Skeleton + Barrel
+Roshambo Block = Dice Block + Boulder
+Winterfest Items
+Yeonnalligi = Blue Portal + Orange Portal
+Holiday Gift Box = Slot Machine + Treasure Chest
+Tier 14 Items
+Tavern Sign = Art Deco Block + Sign
+Scoreboard = Table Lamp + Bulletin Board
+Rocket Thruster = E-Z Cook Oven + Big Old Up Arrow
+Cow Cube = Cow + Barn Block
+Tier 15 Items
+Whatchamacallit = Laboratory + Compu Panel
+Ice Cube = Cow Cube + Ice
+Tier 16 Items
+Frozen DNA Fragment A = Cuzco Wall Mount + Ice Cube
+Frozen DNA Fragment B = Buffalo + Ice Cube
+Tier 17 Items
+Mini Mammoth Leash = Frozen DNA Fragment A + Frozen DNA Fragment B

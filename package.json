@@ -1,0 +1,10 @@
+{
+  "name": "growtopia-recipe-tree",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:data": "node scripts/build-recipes.mjs",
+    "check": "node scripts/build-recipes.mjs --check"
+  }
+}

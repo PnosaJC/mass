@@ -1,0 +1,6960 @@
+window.GROWTOPIA_RECIPE_DATA = {
+  "version": 1,
+  "stats": {
+    "items": 394,
+    "recipes": 375,
+    "baseItems": 19
+  },
+  "items": [
+    {
+      "id": "achievement-block",
+      "name": "Achievement Block",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "acid",
+      "name": "Acid",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "afro",
+      "name": "Afro",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "air-robinsons",
+      "name": "Air Robinsons",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "amber-glass",
+      "name": "Amber Glass",
+      "tier": 3,
+      "section": "Tier 3",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "ancient-stone-gate",
+      "name": "Ancient Stone Gate",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "antidote",
+      "name": "Antidote",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "apple",
+      "name": "Apple",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "apron",
+      "name": "Apron",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "aqua-block",
+      "name": "Aqua Block",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "aqua-wallpaper",
+      "name": "Aqua Wallpaper",
+      "tier": null,
+      "section": "Colored Wallpapers",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "art-deco-block",
+      "name": "Art Deco Block",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "art-wall",
+      "name": "Art Wall",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "asbestos-boots",
+      "name": "Asbestos Boots",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "backpack",
+      "name": "Backpack",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "baneful-mask",
+      "name": "Baneful Mask",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "barkys-mask",
+      "name": "Barky's Mask",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "barn-block",
+      "name": "Barn Block",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "barn-door",
+      "name": "Barn Door",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "barrel",
+      "name": "Barrel",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "baseball-bat",
+      "name": "Baseball Bat",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "baseball-cap",
+      "name": "Baseball Cap",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "bathtub",
+      "name": "Bathtub",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "bed",
+      "name": "Bed",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "big-glasses",
+      "name": "Big Glasses",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "big-old-down-arrow",
+      "name": "Big Old Down Arrow",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "big-old-sideways-arrow",
+      "name": "Big Old Sideways Arrow",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "big-old-up-arrow",
+      "name": "Big Old Up Arrow",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "biker-stache",
+      "name": "Biker Stache",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "biohazard-sign",
+      "name": "Biohazard Sign",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "black-block",
+      "name": "Black Block",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "black-pants",
+      "name": "Black Pants",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "black-wallpaper",
+      "name": "Black Wallpaper",
+      "tier": null,
+      "section": "Colored Wallpapers",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "blackrock-wall",
+      "name": "Blackrock Wall",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "blonde-bombshell",
+      "name": "Blonde Bombshell",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "blue-block",
+      "name": "Blue Block",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "blue-headband",
+      "name": "Blue Headband",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "blue-mailbox",
+      "name": "Blue Mailbox",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "blue-portal",
+      "name": "Blue Portal",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "blue-star-wallpaper",
+      "name": "Blue Star Wallpaper",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "blue-wallpaper",
+      "name": "Blue Wallpaper",
+      "tier": null,
+      "section": "Colored Wallpapers",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "blue-wristband",
+      "name": "Blue Wristband",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "blueberry",
+      "name": "Blueberry",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "blueberry-pie",
+      "name": "Blueberry Pie",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "bookcase",
+      "name": "Bookcase",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "boombox",
+      "name": "Boombox",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "boots",
+      "name": "Boots",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "boulder",
+      "name": "Boulder",
+      "tier": 1,
+      "section": "Tier 1",
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "brainwave-capacitor",
+      "name": "Brainwave Capacitor",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "brick-background",
+      "name": "Brick Background",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "bricks",
+      "name": "Bricks",
+      "tier": 3,
+      "section": "Tier 3",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "briefcase",
+      "name": "Briefcase",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "brown-block",
+      "name": "Brown Block",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "brown-hair",
+      "name": "Brown Hair",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "brown-shoes",
+      "name": "Brown Shoes",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "bubble-wrap",
+      "name": "Bubble Wrap",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "buffalo",
+      "name": "Buffalo",
+      "tier": null,
+      "section": null,
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "bulletin-board",
+      "name": "Bulletin Board",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "burglar-mask",
+      "name": "Burglar Mask",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "bush",
+      "name": "Bush",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "cactus",
+      "name": "Cactus",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "campfire",
+      "name": "Campfire",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "cannon",
+      "name": "Cannon",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "card-block",
+      "name": "Card Block",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "cargo-shorts",
+      "name": "Cargo Shorts",
+      "tier": 3,
+      "section": "Tier 3",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "cash-register",
+      "name": "Cash Register",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "cave-background",
+      "name": "Cave Background",
+      "tier": 1,
+      "section": "Tier 1",
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "chalkboard",
+      "name": "Chalkboard",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "chandelier",
+      "name": "Chandelier",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "checker-wallpaper",
+      "name": "Checker Wallpaper",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "checkered-pajamas",
+      "name": "Checkered Pajamas",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "checkpoint",
+      "name": "Checkpoint",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "chef-hat",
+      "name": "Chef Hat",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "chicken",
+      "name": "Chicken",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "cigar",
+      "name": "Cigar",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "cliffside",
+      "name": "Cliffside",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "clouds",
+      "name": "Clouds",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "cloudstone-block",
+      "name": "Cloudstone Block",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "clown-nose",
+      "name": "Clown Nose",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "clown-pants",
+      "name": "Clown Pants",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "combat-vest",
+      "name": "Combat Vest",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "compu-panel",
+      "name": "Compu Panel",
+      "tier": null,
+      "section": null,
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "copper-plumbing",
+      "name": "Copper Plumbing",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "coral",
+      "name": "Coral",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "couch",
+      "name": "Couch",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "cow",
+      "name": "Cow",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "cow-cube",
+      "name": "Cow Cube",
+      "tier": 14,
+      "section": "Tier 14",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "cowboy-hat",
+      "name": "Cowboy Hat",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "crappy-sign",
+      "name": "Crappy Sign",
+      "tier": 3,
+      "section": "Tier 3",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "crimson-eagle-wings",
+      "name": "Crimson Eagle Wings",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "cutaway-building",
+      "name": "Cutaway Building",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "cuzco-wall-mount",
+      "name": "Cuzco Wall Mount",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "cybernetic-arm",
+      "name": "Cybernetic Arm",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "cyclopean-visor",
+      "name": "Cyclopean Visor",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "daisy",
+      "name": "Daisy",
+      "tier": 3,
+      "section": "Tier 3",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "dames-fedora",
+      "name": "Dame's Fedora",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "danger-sign",
+      "name": "Danger Sign",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "das-red-balloon",
+      "name": "Das Red Balloon",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "death-spikes",
+      "name": "Death Spikes",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "deep-rock",
+      "name": "Deep Rock",
+      "tier": 1,
+      "section": "Tier 1",
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "deep-sand",
+      "name": "Deep Sand",
+      "tier": 1,
+      "section": "Tier 1",
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "devil-horns",
+      "name": "Devil Horns",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "dice-block",
+      "name": "Dice Block",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "dirt",
+      "name": "Dirt",
+      "tier": 1,
+      "section": "Tier 1",
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "disco-ball",
+      "name": "Disco Ball",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "display-box",
+      "name": "Display Box",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "door",
+      "name": "Door",
+      "tier": 2,
+      "section": "Tier 2",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "dragon-gate",
+      "name": "Dragon Gate",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "dreamstone-block",
+      "name": "Dreamstone Block",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "dresser",
+      "name": "Dresser",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "ducky-pajama-pants",
+      "name": "Ducky Pajama Pants",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "ducky-pajama-top",
+      "name": "Ducky Pajama Top",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "dungeon-door",
+      "name": "Dungeon Door",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "e-z-cook-oven",
+      "name": "E-Z Cook Oven",
+      "tier": null,
+      "section": null,
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "elvish-longbow",
+      "name": "Elvish Longbow",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "evil-bricks",
+      "name": "Evil Bricks",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "exclamation-sign",
+      "name": "Exclamation Sign",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "eyepatch",
+      "name": "Eyepatch",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "fairy-crown",
+      "name": "Fairy Crown",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "fairy-dress",
+      "name": "Fairy Dress",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "fairy-skirt",
+      "name": "Fairy Skirt",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "fairy-slippers",
+      "name": "Fairy Slippers",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "fairy-wand",
+      "name": "Fairy Wand",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "fairy-wings",
+      "name": "Fairy Wings",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "farmgirl-hair",
+      "name": "Farmgirl Hair",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "fedora",
+      "name": "Fedora",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "fire-escape",
+      "name": "Fire Escape",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "fire-hydrant",
+      "name": "Fire Hydrant",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "fireplace",
+      "name": "Fireplace",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "fishbowl",
+      "name": "Fishbowl",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "fishnet-stockings",
+      "name": "Fishnet Stockings",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "flaming-skull-mask",
+      "name": "Flaming Skull Mask",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "flapper-dress",
+      "name": "Flapper Dress",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "flapper-headband",
+      "name": "Flapper Headband",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "flashlight",
+      "name": "Flashlight",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "flipping-coin",
+      "name": "Flipping Coin",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "flowery-wallpaper",
+      "name": "Flowery Wallpaper",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "for-sale-sign",
+      "name": "For Sale Sign",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "froghat",
+      "name": "Froghat",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "frozen-dna-fragment-a",
+      "name": "Frozen DNA Fragment A",
+      "tier": 16,
+      "section": "Tier 16",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "frozen-dna-fragment-b",
+      "name": "Frozen DNA Fragment B",
+      "tier": 16,
+      "section": "Tier 16",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "gamblers-visor",
+      "name": "Gambler's Visor",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "garbage",
+      "name": "Garbage",
+      "tier": 1,
+      "section": "Tier 1",
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "gargoyle",
+      "name": "Gargoyle",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "gem-sign",
+      "name": "Gem Sign",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "glass-block",
+      "name": "Glass Block",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "glass-pane",
+      "name": "Glass Pane",
+      "tier": 2,
+      "section": "Tier 2",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "gold-rimmed-glasses",
+      "name": "Gold-Rimmed Glasses",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "golden-block",
+      "name": "Golden Block",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "golden-halo",
+      "name": "Golden Halo",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "golden-sword",
+      "name": "Golden Sword",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "gothic-building",
+      "name": "Gothic Building",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "granite-block",
+      "name": "Granite Block",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "grass",
+      "name": "Grass",
+      "tier": 2,
+      "section": "Tier 2",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "green-block",
+      "name": "Green Block",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "green-blouse",
+      "name": "Green Blouse",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "green-shirt",
+      "name": "Green Shirt",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "green-skirt",
+      "name": "Green Skirt",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "green-wallpaper",
+      "name": "Green Wallpaper",
+      "tier": null,
+      "section": "Colored Wallpapers",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "grey-block",
+      "name": "Grey Block",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "grey-hair-bun",
+      "name": "Grey Hair Bun",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "grey-wallpaper",
+      "name": "Grey Wallpaper",
+      "tier": null,
+      "section": "Colored Wallpapers",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "grimstone",
+      "name": "Grimstone",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "growbeats-headphones",
+      "name": "GrowBeats Headphones",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "hammer-pants",
+      "name": "Hammer Pants",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "happy-joy-plaque",
+      "name": "Happy Joy Plaque",
+      "tier": 3,
+      "section": "Tier 3",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "headsmans-axe",
+      "name": "Headsman's Axe",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "high-tech-block",
+      "name": "High Tech Block",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "high-tech-wall",
+      "name": "High Tech Wall",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "holiday-gift-box",
+      "name": "Holiday Gift Box",
+      "tier": null,
+      "section": "Winterfest Items",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "hoop-earrings",
+      "name": "Hoop Earrings",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "hospital-bed",
+      "name": "Hospital Bed",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "hot-head",
+      "name": "Hot Head",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "house-entrance",
+      "name": "House Entrance",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "ice",
+      "name": "Ice",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "ice-cube",
+      "name": "Ice Cube",
+      "tier": 15,
+      "section": "Tier 15",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "iron-bars",
+      "name": "Iron Bars",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "jail-door",
+      "name": "Jail Door",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "jeans",
+      "name": "Jeans",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "jetpack",
+      "name": "Jetpack",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "just-one-boxing-glove",
+      "name": "Just One Boxing Glove",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "laboratory",
+      "name": "Laboratory",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "ladder",
+      "name": "Ladder",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "lattice-background",
+      "name": "Lattice Background",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "lava",
+      "name": "Lava",
+      "tier": 1,
+      "section": "Tier 1",
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "lava-rock",
+      "name": "Lava Rock",
+      "tier": 2,
+      "section": "Tier 2",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "lollipop",
+      "name": "Lollipop",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "long-black-hair",
+      "name": "Long Black Hair",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "long-brown-hair",
+      "name": "Long Brown Hair",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "lovely-pink-dress",
+      "name": "Lovely Pink Dress",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "magic-bacon-wallpaper",
+      "name": "Magic Bacon Wallpaper",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "magic-eg",
+      "name": "Magic Eg",
+      "tier": 1,
+      "section": "Tier 1",
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "mailbox",
+      "name": "Mailbox",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "mannequin",
+      "name": "Mannequin",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "marble-block",
+      "name": "Marble Block",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "mars-rock",
+      "name": "Mars Rock",
+      "tier": 1,
+      "section": "Tier 1",
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "martian-soil",
+      "name": "Martian Soil",
+      "tier": 1,
+      "section": "Tier 1",
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "martian-tree",
+      "name": "Martian Tree",
+      "tier": 2,
+      "section": "Tier 2",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "meaty-apron",
+      "name": "Meaty Apron",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "messy-brown-hair",
+      "name": "Messy Brown Hair",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "microwave",
+      "name": "Microwave",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "military-radio",
+      "name": "Military Radio",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "mini-mammoth-leash",
+      "name": "Mini Mammoth Leash",
+      "tier": 17,
+      "section": "Tier 17",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "monocle",
+      "name": "Monocle",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "monster-feet",
+      "name": "Monster Feet",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "mud-glob",
+      "name": "Mud Glob",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "mushroom",
+      "name": "Mushroom",
+      "tier": 3,
+      "section": "Tier 3",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "music-box",
+      "name": "Music Box",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "mystery-block",
+      "name": "Mystery Block",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "neon-lights",
+      "name": "Neon Lights",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "ninja-mask",
+      "name": "Ninja Mask",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "ninja-slippers",
+      "name": "Ninja Slippers",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "ninja-tights",
+      "name": "Ninja Tights",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "ninja-vest",
+      "name": "Ninja Vest",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "note-block",
+      "name": "Note Block",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "obelisk",
+      "name": "Obelisk",
+      "tier": 1,
+      "section": "Tier 1",
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "ocean-rock",
+      "name": "Ocean Rock",
+      "tier": 1,
+      "section": "Tier 1",
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "olde-timey-radio",
+      "name": "Olde Timey Radio",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "olde-timey-hat",
+      "name": "Olde-Timey Hat",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "open-sign",
+      "name": "Open Sign",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "orange-block",
+      "name": "Orange Block",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "orange-portal",
+      "name": "Orange Portal",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "orange-stuff",
+      "name": "Orange Stuff",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "orange-wallpaper",
+      "name": "Orange Wallpaper",
+      "tier": null,
+      "section": "Colored Wallpapers",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "overalls",
+      "name": "Overalls",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "painting-dink-duck",
+      "name": "Painting: Dink Duck",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "painting-yerfdog",
+      "name": "Painting: Yerfdog",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "parasol",
+      "name": "Parasol",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "password-door",
+      "name": "Password Door",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "pastel-blue-block",
+      "name": "Pastel Blue Block",
+      "tier": null,
+      "section": null,
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "patent-leather-shoes",
+      "name": "Patent Leather Shoes",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "peg-leg",
+      "name": "Peg Leg",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "pencil",
+      "name": "Pencil",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "pickaxe",
+      "name": "Pickaxe",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "picket-fence",
+      "name": "Picket Fence",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "pigtails",
+      "name": "Pigtails",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "pinball-bumper",
+      "name": "Pinball Bumper",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "pinball-sproinger",
+      "name": "Pinball Sproinger",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "pinstripe-pants",
+      "name": "Pinstripe Pants",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "pinstripe-suit",
+      "name": "Pinstripe Suit",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "pirate-hat",
+      "name": "Pirate Hat",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "pitchfork",
+      "name": "Pitchfork",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "plate-mail",
+      "name": "Plate Mail",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "plumbing",
+      "name": "Plumbing",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "pointy-sign",
+      "name": "Pointy Sign",
+      "tier": 3,
+      "section": "Tier 3",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "polka-dot-block",
+      "name": "Polka Dot Block",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "poodle-skirt",
+      "name": "Poodle Skirt",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "poppy",
+      "name": "Poppy",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "portcullis",
+      "name": "Portcullis",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "purple-bikini-top",
+      "name": "Purple Bikini Top",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "purple-block",
+      "name": "Purple Block",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "purple-mohawk",
+      "name": "Purple Mohawk",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "purple-stuff",
+      "name": "Purple Stuff",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "purple-thong",
+      "name": "Purple Thong",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "purple-wallpaper",
+      "name": "Purple Wallpaper",
+      "tier": null,
+      "section": "Colored Wallpapers",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "race-end-flag",
+      "name": "Race End Flag",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "race-start-flag",
+      "name": "Race Start Flag",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "rainbow-block",
+      "name": "Rainbow Block",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "rainbow-wig",
+      "name": "Rainbow Wig",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "red-block",
+      "name": "Red Block",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "red-bricks",
+      "name": "Red Bricks",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "red-coat",
+      "name": "Red Coat",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "red-hair",
+      "name": "Red Hair",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "red-riding-hood",
+      "name": "Red Riding Hood",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "red-sportsball-jersey",
+      "name": "Red Sportsball Jersey",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "red-sweatpants",
+      "name": "Red Sweatpants",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "red-wallpaper",
+      "name": "Red Wallpaper",
+      "tier": null,
+      "section": "Colored Wallpapers",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "red-wood-wall",
+      "name": "Red Wood Wall",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "referee-shirt",
+      "name": "Referee Shirt",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "refrigerator",
+      "name": "Refrigerator",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "ripper-wings",
+      "name": "Ripper Wings",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "robot-wants-dubstep",
+      "name": "Robot Wants Dubstep",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "rock",
+      "name": "Rock",
+      "tier": 1,
+      "section": "Tier 1",
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "rock-background",
+      "name": "Rock Background",
+      "tier": 3,
+      "section": "Tier 3",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "rocket-thruster",
+      "name": "Rocket Thruster",
+      "tier": 14,
+      "section": "Tier 14",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "rooster-hat",
+      "name": "Rooster Hat",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "rose",
+      "name": "Rose",
+      "tier": 3,
+      "section": "Tier 3",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "roshambo-block",
+      "name": "Roshambo Block",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "roulette-wheel",
+      "name": "Roulette Wheel",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "rubber-ducky",
+      "name": "Rubber Ducky",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "ruby-slippers",
+      "name": "Ruby Slippers",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "rustic-fence",
+      "name": "Rustic Fence",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sack-o-joy",
+      "name": "Sack O' Joy",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "saloon-doors",
+      "name": "Saloon Doors",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sand",
+      "name": "Sand",
+      "tier": 1,
+      "section": "Tier 1",
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "sandstone",
+      "name": "Sandstone",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sandstone-wall",
+      "name": "Sandstone Wall",
+      "tier": 1,
+      "section": "Tier 1",
+      "hasRecipe": false,
+      "isBase": true,
+      "image": null
+    },
+    {
+      "id": "santa-hat",
+      "name": "Santa Hat",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "santa-pants",
+      "name": "Santa Pants",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "santa-vest",
+      "name": "Santa Vest",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "saturday-night-vest",
+      "name": "Saturday Night Vest",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "school-desk",
+      "name": "School Desk",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "science-station",
+      "name": "Science Station",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "scoreboard",
+      "name": "Scoreboard",
+      "tier": 14,
+      "section": "Tier 14",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "screen-door",
+      "name": "Screen Door",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "seaweed",
+      "name": "Seaweed",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "secret-of-growtopia",
+      "name": "Secret Of Growtopia",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "secret-passage",
+      "name": "Secret Passage",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sexy-boxers",
+      "name": "Sexy Boxers",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "shades",
+      "name": "Shades",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "shallot-mustache",
+      "name": "Shallot Mustache",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sheet-music-bass-note",
+      "name": "Sheet Music: Bass Note",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sheet-music-blank",
+      "name": "Sheet Music: Blank",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sheet-music-drums",
+      "name": "Sheet Music: Drums",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sheet-music-flat-bass",
+      "name": "Sheet Music: Flat Bass",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sheet-music-flat-piano",
+      "name": "Sheet Music: Flat Piano",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sheet-music-piano-note",
+      "name": "Sheet Music: Piano Note",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sheet-music-sharp-bass",
+      "name": "Sheet Music: Sharp Bass",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sheet-music-sharp-piano",
+      "name": "Sheet Music: Sharp Piano",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sheriffs-vest",
+      "name": "Sheriff's Vest",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "shop-sign",
+      "name": "Shop Sign",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "showgirl-headdress",
+      "name": "Showgirl Headdress",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "showgirl-leggings",
+      "name": "Showgirl Leggings",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "showgirl-top",
+      "name": "Showgirl Top",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sidewalk",
+      "name": "Sidewalk",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sign",
+      "name": "Sign",
+      "tier": 2,
+      "section": "Tier 2",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "skeleton",
+      "name": "Skeleton",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "ski-cap",
+      "name": "Ski Cap",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "slot-machine",
+      "name": "Slot Machine",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "snorkel",
+      "name": "Snorkel",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "snowy-rocks",
+      "name": "Snowy Rocks",
+      "tier": null,
+      "section": "Winterfest Items",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "space-helmet",
+      "name": "Space Helmet",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "spatula",
+      "name": "Spatula",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "spikey-hair",
+      "name": "Spikey Hair",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sproingy-eyes",
+      "name": "Sproingy Eyes",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "steel-block",
+      "name": "Steel Block",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "steel-girder",
+      "name": "Steel Girder",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "stinky-sock",
+      "name": "Stinky Sock",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "stone-wall",
+      "name": "Stone Wall",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "stove",
+      "name": "Stove",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "straw-hat",
+      "name": "Straw Hat",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "street-sign",
+      "name": "Street Sign",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "streetlamp",
+      "name": "Streetlamp",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "stripey-wallpaper",
+      "name": "Stripey Wallpaper",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sugar-cane",
+      "name": "Sugar Cane",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "super-crate-box",
+      "name": "Super Crate Box",
+      "tier": 3,
+      "section": "Tier 3",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "surgical-tool",
+      "name": "Surgical Tool",
+      "tier": null,
+      "section": "Surgical Tools",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "sword",
+      "name": "Sword",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "table-lamp",
+      "name": "Table Lamp",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "tan-shirt",
+      "name": "Tan Shirt",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "tangram-block",
+      "name": "Tangram Block",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "tavern-sign",
+      "name": "Tavern Sign",
+      "tier": 14,
+      "section": "Tier 14",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "television",
+      "name": "Television",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "tenement-building",
+      "name": "Tenement Building",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "terracotta-pot",
+      "name": "Terracotta Pot",
+      "tier": 3,
+      "section": "Tier 3",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "the-darkness",
+      "name": "The Darkness",
+      "tier": 10,
+      "section": "Tier 10",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "tie-dyed-shirt",
+      "name": "Tie Dyed Shirt",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "time-space-rupture",
+      "name": "Time-Space Rupture",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "toilet",
+      "name": "Toilet",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "tomato",
+      "name": "Tomato",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "tombstone",
+      "name": "Tombstone",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "tommygun",
+      "name": "TommyGun",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "top-hat",
+      "name": "Top Hat",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "torch",
+      "name": "Torch",
+      "tier": 3,
+      "section": "Tier 3",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "toxic-waste-barrel",
+      "name": "Toxic Waste Barrel",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "traffic-barricade",
+      "name": "Traffic Barricade",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "tramsmog-crystal",
+      "name": "Tramsmog Crystal",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "treasure-chest",
+      "name": "Treasure Chest",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "tuxedo",
+      "name": "Tuxedo",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "tv-head",
+      "name": "TV Head",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "velvet-rope",
+      "name": "Velvet Rope",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "venus-guytrap",
+      "name": "Venus Guytrap",
+      "tier": 11,
+      "section": "Tier 11",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "victrola",
+      "name": "Victrola",
+      "tier": 13,
+      "section": "Tier 13",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "viking-helmet",
+      "name": "Viking Helmet",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "wall-like-an-egyptian",
+      "name": "Wall Like An Egyptian",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "war-paint",
+      "name": "War Paint",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "water-bucket",
+      "name": "Water Bucket",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "western-banner",
+      "name": "Western Banner",
+      "tier": 9,
+      "section": "Tier 9",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "western-building",
+      "name": "Western Building",
+      "tier": 8,
+      "section": "Tier 8",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "whatchamacallit",
+      "name": "Whatchamacallit",
+      "tier": 15,
+      "section": "Tier 15",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "wheat",
+      "name": "Wheat",
+      "tier": 3,
+      "section": "Tier 3",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "white-beard",
+      "name": "White Beard",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "white-bellbottoms",
+      "name": "White Bellbottoms",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "white-block",
+      "name": "White Block",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "white-wallpaper",
+      "name": "White Wallpaper",
+      "tier": null,
+      "section": "Colored Wallpapers",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "window",
+      "name": "Window",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "winter-gift",
+      "name": "Winter Gift",
+      "tier": null,
+      "section": "Winterfest Items",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "winter-scarf",
+      "name": "Winter Scarf",
+      "tier": null,
+      "section": "Winterfest Items",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "wizard-hat",
+      "name": "Wizard Hat",
+      "tier": null,
+      "section": "Wizard Hats",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "wizards-robe",
+      "name": "Wizard's Robe",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "wood-block",
+      "name": "Wood Block",
+      "tier": 2,
+      "section": "Tier 2",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "wooden-background",
+      "name": "Wooden Background",
+      "tier": 3,
+      "section": "Tier 3",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "wooden-chair",
+      "name": "Wooden Chair",
+      "tier": 6,
+      "section": "Tier 6",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "wooden-platform",
+      "name": "Wooden Platform",
+      "tier": 3,
+      "section": "Tier 3",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "wooden-table",
+      "name": "Wooden Table",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "wooden-window",
+      "name": "Wooden Window",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "worthless-rags",
+      "name": "Worthless Rags",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "wrought-iron-fence",
+      "name": "Wrought-Iron Fence",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "x-ray-specs",
+      "name": "X-Ray Specs",
+      "tier": 5,
+      "section": "Tier 5",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "yellow-block",
+      "name": "Yellow Block",
+      "tier": 4,
+      "section": "Tier 4",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "yellow-wallpaper",
+      "name": "Yellow Wallpaper",
+      "tier": null,
+      "section": "Colored Wallpapers",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "yeonnalligi",
+      "name": "Yeonnalligi",
+      "tier": null,
+      "section": "Winterfest Items",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "zeta-reticulant-mask",
+      "name": "Zeta Reticulant Mask",
+      "tier": 12,
+      "section": "Tier 12",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    },
+    {
+      "id": "zombie-stompin-boots",
+      "name": "Zombie-Stompin' Boots",
+      "tier": 7,
+      "section": "Tier 7",
+      "hasRecipe": true,
+      "isBase": false,
+      "image": null
+    }
+  ],
+  "recipes": [
+    {
+      "output": "achievement-block",
+      "ingredients": [
+        "art-wall",
+        "wood-block"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "acid",
+      "ingredients": [
+        "plumbing",
+        "cactus"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "afro",
+      "ingredients": [
+        "bush",
+        "black-block"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "air-robinsons",
+      "ingredients": [
+        "race-end-flag",
+        "bubble-wrap"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "amber-glass",
+      "ingredients": [
+        "dirt",
+        "glass-pane"
+      ],
+      "tier": 3,
+      "section": "Tier 3"
+    },
+    {
+      "output": "ancient-stone-gate",
+      "ingredients": [
+        "sandstone-wall",
+        "portcullis"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "antidote",
+      "ingredients": [
+        "blueberry",
+        "apple"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "apple",
+      "ingredients": [
+        "red-bricks",
+        "blueberry"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "apron",
+      "ingredients": [
+        "stove",
+        "checker-wallpaper"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "aqua-block",
+      "ingredients": [
+        "bricks",
+        "glass-pane"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "aqua-wallpaper",
+      "ingredients": [
+        "aqua-block",
+        "magic-bacon-wallpaper"
+      ],
+      "tier": null,
+      "section": "Colored Wallpapers"
+    },
+    {
+      "output": "art-deco-block",
+      "ingredients": [
+        "time-space-rupture",
+        "grey-block"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "art-wall",
+      "ingredients": [
+        "magic-bacon-wallpaper",
+        "rainbow-block"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "asbestos-boots",
+      "ingredients": [
+        "evil-bricks",
+        "yellow-block"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "backpack",
+      "ingredients": [
+        "bed",
+        "super-crate-box"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "baneful-mask",
+      "ingredients": [
+        "the-darkness",
+        "plumbing"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "barkys-mask",
+      "ingredients": [
+        "barrel",
+        "painting-yerfdog"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "barn-block",
+      "ingredients": [
+        "super-crate-box",
+        "red-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "barn-door",
+      "ingredients": [
+        "door",
+        "barn-block"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "barrel",
+      "ingredients": [
+        "dungeon-door",
+        "super-crate-box"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "baseball-bat",
+      "ingredients": [
+        "house-entrance",
+        "sign"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "baseball-cap",
+      "ingredients": [
+        "bush",
+        "wooden-platform"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "bathtub",
+      "ingredients": [
+        "toilet",
+        "white-block"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "bed",
+      "ingredients": [
+        "wooden-chair",
+        "mushroom"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "big-glasses",
+      "ingredients": [
+        "window",
+        "wooden-window"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "big-old-down-arrow",
+      "ingredients": [
+        "pointy-sign",
+        "devil-horns"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "big-old-sideways-arrow",
+      "ingredients": [
+        "orange-block",
+        "pointy-sign"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "big-old-up-arrow",
+      "ingredients": [
+        "das-red-balloon",
+        "pointy-sign"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "biker-stache",
+      "ingredients": [
+        "brown-block",
+        "grass"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "biohazard-sign",
+      "ingredients": [
+        "danger-sign",
+        "orange-block"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "black-block",
+      "ingredients": [
+        "bricks",
+        "cave-background"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "black-pants",
+      "ingredients": [
+        "door",
+        "black-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "black-wallpaper",
+      "ingredients": [
+        "black-block",
+        "magic-bacon-wallpaper"
+      ],
+      "tier": null,
+      "section": "Colored Wallpapers"
+    },
+    {
+      "output": "blackrock-wall",
+      "ingredients": [
+        "the-darkness",
+        "lava-rock"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "blonde-bombshell",
+      "ingredients": [
+        "yellow-block",
+        "grass"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "blue-block",
+      "ingredients": [
+        "bricks",
+        "blueberry"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "blue-headband",
+      "ingredients": [
+        "golden-halo",
+        "race-start-flag"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "blue-mailbox",
+      "ingredients": [
+        "mailbox",
+        "blue-block"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "blue-portal",
+      "ingredients": [
+        "high-tech-block",
+        "blue-block"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "blue-star-wallpaper",
+      "ingredients": [
+        "blue-block",
+        "amber-glass"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "blue-wallpaper",
+      "ingredients": [
+        "blue-block",
+        "magic-bacon-wallpaper"
+      ],
+      "tier": null,
+      "section": "Colored Wallpapers"
+    },
+    {
+      "output": "blue-wristband",
+      "ingredients": [
+        "race-start-flag",
+        "blueberry"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "blueberry",
+      "ingredients": [
+        "bush",
+        "mushroom"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "blueberry-pie",
+      "ingredients": [
+        "stove",
+        "blueberry"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "bookcase",
+      "ingredients": [
+        "rainbow-block",
+        "dresser"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "boombox",
+      "ingredients": [
+        "steel-block",
+        "black-block"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "boots",
+      "ingredients": [
+        "rock",
+        "black-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "brainwave-capacitor",
+      "ingredients": [
+        "olde-timey-radio",
+        "yellow-block"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "brick-background",
+      "ingredients": [
+        "bricks",
+        "black-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "bricks",
+      "ingredients": [
+        "rock",
+        "grass"
+      ],
+      "tier": 3,
+      "section": "Tier 3"
+    },
+    {
+      "output": "briefcase",
+      "ingredients": [
+        "brown-block",
+        "stripey-wallpaper"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "brown-block",
+      "ingredients": [
+        "bricks",
+        "dirt"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "brown-hair",
+      "ingredients": [
+        "dirt",
+        "brown-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "brown-shoes",
+      "ingredients": [
+        "cave-background",
+        "brown-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "bubble-wrap",
+      "ingredients": [
+        "blueberry",
+        "glass-pane"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "bulletin-board",
+      "ingredients": [
+        "lattice-background",
+        "chalkboard"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "burglar-mask",
+      "ingredients": [
+        "cave-background",
+        "brick-background"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "bush",
+      "ingredients": [
+        "poppy",
+        "rose"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "cactus",
+      "ingredients": [
+        "death-spikes",
+        "bush"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "campfire",
+      "ingredients": [
+        "fireplace",
+        "cactus"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "cannon",
+      "ingredients": [
+        "fireplace",
+        "black-block"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "card-block",
+      "ingredients": [
+        "tangram-block",
+        "das-red-balloon"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "cargo-shorts",
+      "ingredients": [
+        "dirt",
+        "wood-block"
+      ],
+      "tier": 3,
+      "section": "Tier 3"
+    },
+    {
+      "output": "cash-register",
+      "ingredients": [
+        "military-radio",
+        "gargoyle"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "chalkboard",
+      "ingredients": [
+        "grey-wallpaper",
+        "painting-yerfdog"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "chandelier",
+      "ingredients": [
+        "fireplace",
+        "golden-block"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "checker-wallpaper",
+      "ingredients": [
+        "window",
+        "evil-bricks"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "checkered-pajamas",
+      "ingredients": [
+        "checker-wallpaper",
+        "bed"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "checkpoint",
+      "ingredients": [
+        "cloudstone-block",
+        "bubble-wrap"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "chef-hat",
+      "ingredients": [
+        "stove",
+        "mushroom"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "chicken",
+      "ingredients": [
+        "rubber-ducky",
+        "clouds"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "cigar",
+      "ingredients": [
+        "time-space-rupture",
+        "lava-rock"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "cliffside",
+      "ingredients": [
+        "rock-background",
+        "boulder"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "clouds",
+      "ingredients": [
+        "cloudstone-block",
+        "glass-block"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "cloudstone-block",
+      "ingredients": [
+        "dreamstone-block",
+        "aqua-block"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "clown-nose",
+      "ingredients": [
+        "tomato",
+        "happy-joy-plaque"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "clown-pants",
+      "ingredients": [
+        "polka-dot-block",
+        "happy-joy-plaque"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "combat-vest",
+      "ingredients": [
+        "green-wallpaper",
+        "aqua-wallpaper"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "copper-plumbing",
+      "ingredients": [
+        "plumbing",
+        "orange-block"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "coral",
+      "ingredients": [
+        "seaweed",
+        "ocean-rock"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "couch",
+      "ingredients": [
+        "hospital-bed",
+        "stripey-wallpaper"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "cow",
+      "ingredients": [
+        "refrigerator",
+        "brown-block"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "cow-cube",
+      "ingredients": [
+        "cow",
+        "barn-block"
+      ],
+      "tier": 14,
+      "section": "Tier 14"
+    },
+    {
+      "output": "cowboy-hat",
+      "ingredients": [
+        "sand",
+        "big-old-up-arrow"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "crappy-sign",
+      "ingredients": [
+        "door",
+        "dirt"
+      ],
+      "tier": 3,
+      "section": "Tier 3"
+    },
+    {
+      "output": "crimson-eagle-wings",
+      "ingredients": [
+        "red-wallpaper",
+        "blue-wallpaper"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "cutaway-building",
+      "ingredients": [
+        "western-building",
+        "tenement-building"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "cuzco-wall-mount",
+      "ingredients": [
+        "painting-yerfdog",
+        "dungeon-door"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "cybernetic-arm",
+      "ingredients": [
+        "steel-girder",
+        "boombox"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "cyclopean-visor",
+      "ingredients": [
+        "window",
+        "red-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "daisy",
+      "ingredients": [
+        "grass",
+        "dirt"
+      ],
+      "tier": 3,
+      "section": "Tier 3"
+    },
+    {
+      "output": "dames-fedora",
+      "ingredients": [
+        "time-space-rupture",
+        "poppy"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "danger-sign",
+      "ingredients": [
+        "lava",
+        "pointy-sign"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "das-red-balloon",
+      "ingredients": [
+        "bubble-wrap",
+        "red-block"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "death-spikes",
+      "ingredients": [
+        "danger-sign",
+        "rock-background"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "devil-horns",
+      "ingredients": [
+        "lava",
+        "death-spikes"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "dice-block",
+      "ingredients": [
+        "art-wall",
+        "grey-block"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "disco-ball",
+      "ingredients": [
+        "window",
+        "boombox"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "display-box",
+      "ingredients": [
+        "glass-block",
+        "music-box"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "door",
+      "ingredients": [
+        "dirt",
+        "cave-background"
+      ],
+      "tier": 2,
+      "section": "Tier 2"
+    },
+    {
+      "output": "dragon-gate",
+      "ingredients": [
+        "venus-guytrap",
+        "portcullis"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "dreamstone-block",
+      "ingredients": [
+        "bed",
+        "orange-block"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "dresser",
+      "ingredients": [
+        "wooden-table",
+        "dungeon-door"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "ducky-pajama-pants",
+      "ingredients": [
+        "rubber-ducky",
+        "dreamstone-block"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "ducky-pajama-top",
+      "ingredients": [
+        "rubber-ducky",
+        "cloudstone-block"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "dungeon-door",
+      "ingredients": [
+        "door",
+        "window"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "elvish-longbow",
+      "ingredients": [
+        "ladder",
+        "big-old-sideways-arrow"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "evil-bricks",
+      "ingredients": [
+        "lava",
+        "black-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "exclamation-sign",
+      "ingredients": [
+        "barn-block",
+        "martian-tree"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "eyepatch",
+      "ingredients": [
+        "cannon",
+        "cuzco-wall-mount"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "fairy-crown",
+      "ingredients": [
+        "grass",
+        "disco-ball"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "fairy-dress",
+      "ingredients": [
+        "aqua-block",
+        "disco-ball"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "fairy-skirt",
+      "ingredients": [
+        "daisy",
+        "disco-ball"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "fairy-slippers",
+      "ingredients": [
+        "poppy",
+        "disco-ball"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "fairy-wand",
+      "ingredients": [
+        "wood-block",
+        "disco-ball"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "fairy-wings",
+      "ingredients": [
+        "flowery-wallpaper",
+        "disco-ball"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "farmgirl-hair",
+      "ingredients": [
+        "velvet-rope",
+        "poppy"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "fedora",
+      "ingredients": [
+        "time-space-rupture",
+        "black-block"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "fire-escape",
+      "ingredients": [
+        "steel-girder",
+        "ladder"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "fire-hydrant",
+      "ingredients": [
+        "red-wallpaper",
+        "water-bucket"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "fireplace",
+      "ingredients": [
+        "evil-bricks",
+        "golden-block"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "fishbowl",
+      "ingredients": [
+        "ice",
+        "wooden-window"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "fishnet-stockings",
+      "ingredients": [
+        "the-darkness",
+        "boombox"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "flaming-skull-mask",
+      "ingredients": [
+        "skeleton",
+        "torch"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "flapper-dress",
+      "ingredients": [
+        "time-space-rupture",
+        "lava"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "flapper-headband",
+      "ingredients": [
+        "time-space-rupture",
+        "daisy"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "flashlight",
+      "ingredients": [
+        "black-block",
+        "yellow-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "flipping-coin",
+      "ingredients": [
+        "golden-block",
+        "sheet-music-drums"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "flowery-wallpaper",
+      "ingredients": [
+        "wooden-background",
+        "daisy"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "for-sale-sign",
+      "ingredients": [
+        "street-sign",
+        "red-block"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "froghat",
+      "ingredients": [
+        "aqua-block",
+        "bush"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "frozen-dna-fragment-a",
+      "ingredients": [
+        "cuzco-wall-mount",
+        "ice-cube"
+      ],
+      "tier": 16,
+      "section": "Tier 16"
+    },
+    {
+      "output": "frozen-dna-fragment-b",
+      "ingredients": [
+        "buffalo",
+        "ice-cube"
+      ],
+      "tier": 16,
+      "section": "Tier 16"
+    },
+    {
+      "output": "gamblers-visor",
+      "ingredients": [
+        "green-block",
+        "glass-block"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "gargoyle",
+      "ingredients": [
+        "grimstone",
+        "devil-horns"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "gem-sign",
+      "ingredients": [
+        "street-sign",
+        "yellow-block"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "glass-block",
+      "ingredients": [
+        "aqua-block",
+        "glass-pane"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "glass-pane",
+      "ingredients": [
+        "rock",
+        "lava"
+      ],
+      "tier": 2,
+      "section": "Tier 2"
+    },
+    {
+      "output": "gold-rimmed-glasses",
+      "ingredients": [
+        "yellow-block",
+        "window"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "golden-block",
+      "ingredients": [
+        "steel-block",
+        "yellow-block"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "golden-halo",
+      "ingredients": [
+        "yellow-block",
+        "disco-ball"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "golden-sword",
+      "ingredients": [
+        "golden-block",
+        "picket-fence"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "gothic-building",
+      "ingredients": [
+        "orange-wallpaper",
+        "blackrock-wall"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "granite-block",
+      "ingredients": [
+        "sandstone",
+        "stone-wall"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "grass",
+      "ingredients": [
+        "dirt",
+        "rock"
+      ],
+      "tier": 2,
+      "section": "Tier 2"
+    },
+    {
+      "output": "green-block",
+      "ingredients": [
+        "bricks",
+        "grass"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "green-blouse",
+      "ingredients": [
+        "bush",
+        "green-block"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "green-shirt",
+      "ingredients": [
+        "grass",
+        "green-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "green-skirt",
+      "ingredients": [
+        "poppy",
+        "green-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "green-wallpaper",
+      "ingredients": [
+        "green-block",
+        "magic-bacon-wallpaper"
+      ],
+      "tier": null,
+      "section": "Colored Wallpapers"
+    },
+    {
+      "output": "grey-block",
+      "ingredients": [
+        "bricks",
+        "rock"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "grey-hair-bun",
+      "ingredients": [
+        "olde-timey-radio",
+        "grey-block"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "grey-wallpaper",
+      "ingredients": [
+        "grey-block",
+        "magic-bacon-wallpaper"
+      ],
+      "tier": null,
+      "section": "Colored Wallpapers"
+    },
+    {
+      "output": "grimstone",
+      "ingredients": [
+        "grass",
+        "stone-wall"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "growbeats-headphones",
+      "ingredients": [
+        "boombox",
+        "note-block"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "hammer-pants",
+      "ingredients": [
+        "purple-wallpaper",
+        "tangram-block"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "happy-joy-plaque",
+      "ingredients": [
+        "door",
+        "cave-background"
+      ],
+      "tier": 3,
+      "section": "Tier 3"
+    },
+    {
+      "output": "headsmans-axe",
+      "ingredients": [
+        "pencil",
+        "dragon-gate"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "high-tech-block",
+      "ingredients": [
+        "robot-wants-dubstep",
+        "grey-block"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "high-tech-wall",
+      "ingredients": [
+        "robot-wants-dubstep",
+        "black-block"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "holiday-gift-box",
+      "ingredients": [
+        "slot-machine",
+        "treasure-chest"
+      ],
+      "tier": null,
+      "section": "Winterfest Items"
+    },
+    {
+      "output": "hoop-earrings",
+      "ingredients": [
+        "golden-halo",
+        "poppy"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "hospital-bed",
+      "ingredients": [
+        "bed",
+        "screen-door"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "hot-head",
+      "ingredients": [
+        "lava",
+        "red-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "house-entrance",
+      "ingredients": [
+        "dungeon-door",
+        "door"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "ice",
+      "ingredients": [
+        "cloudstone-block",
+        "glass-pane"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "ice-cube",
+      "ingredients": [
+        "cow-cube",
+        "ice"
+      ],
+      "tier": 15,
+      "section": "Tier 15"
+    },
+    {
+      "output": "iron-bars",
+      "ingredients": [
+        "plumbing",
+        "death-spikes"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "jail-door",
+      "ingredients": [
+        "iron-bars",
+        "portcullis"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "jeans",
+      "ingredients": [
+        "aqua-block",
+        "rock"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "jetpack",
+      "ingredients": [
+        "lava",
+        "steel-block"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "just-one-boxing-glove",
+      "ingredients": [
+        "red-block",
+        "blueberry"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "laboratory",
+      "ingredients": [
+        "refrigerator",
+        "biohazard-sign"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "ladder",
+      "ingredients": [
+        "big-old-up-arrow",
+        "wooden-platform"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "lattice-background",
+      "ingredients": [
+        "wooden-chair",
+        "wooden-background"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "lava-rock",
+      "ingredients": [
+        "lava",
+        "cave-background"
+      ],
+      "tier": 2,
+      "section": "Tier 2"
+    },
+    {
+      "output": "lollipop",
+      "ingredients": [
+        "purple-block",
+        "blueberry"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "long-black-hair",
+      "ingredients": [
+        "black-block",
+        "portcullis"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "long-brown-hair",
+      "ingredients": [
+        "wooden-table",
+        "grass"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "lovely-pink-dress",
+      "ingredients": [
+        "flowery-wallpaper",
+        "mushroom"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "magic-bacon-wallpaper",
+      "ingredients": [
+        "rainbow-block",
+        "house-entrance"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "mailbox",
+      "ingredients": [
+        "steel-block",
+        "big-old-up-arrow"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "mannequin",
+      "ingredients": [
+        "skeleton",
+        "barrel"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "marble-block",
+      "ingredients": [
+        "granite-block",
+        "dreamstone-block"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "martian-tree",
+      "ingredients": [
+        "martian-soil",
+        "mars-rock"
+      ],
+      "tier": 2,
+      "section": "Tier 2"
+    },
+    {
+      "output": "meaty-apron",
+      "ingredients": [
+        "chicken",
+        "brick-background"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "messy-brown-hair",
+      "ingredients": [
+        "crappy-sign",
+        "grass"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "microwave",
+      "ingredients": [
+        "television",
+        "toxic-waste-barrel"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "military-radio",
+      "ingredients": [
+        "biohazard-sign",
+        "sheet-music-sharp-piano"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "mini-mammoth-leash",
+      "ingredients": [
+        "frozen-dna-fragment-a",
+        "frozen-dna-fragment-b"
+      ],
+      "tier": 17,
+      "section": "Tier 17"
+    },
+    {
+      "output": "monocle",
+      "ingredients": [
+        "music-box",
+        "window"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "monster-feet",
+      "ingredients": [
+        "devil-horns",
+        "green-block"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "mud-glob",
+      "ingredients": [
+        "daisy",
+        "dirt"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "mushroom",
+      "ingredients": [
+        "cave-background",
+        "grass"
+      ],
+      "tier": 3,
+      "section": "Tier 3"
+    },
+    {
+      "output": "music-box",
+      "ingredients": [
+        "rubber-ducky",
+        "olde-timey-radio"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "mystery-block",
+      "ingredients": [
+        "steel-block",
+        "disco-ball"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "neon-lights",
+      "ingredients": [
+        "glass-block",
+        "purple-block"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "ninja-mask",
+      "ingredients": [
+        "the-darkness",
+        "black-block"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "ninja-slippers",
+      "ingredients": [
+        "the-darkness",
+        "brown-block"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "ninja-tights",
+      "ingredients": [
+        "the-darkness",
+        "purple-block"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "ninja-vest",
+      "ingredients": [
+        "the-darkness",
+        "blue-block"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "note-block",
+      "ingredients": [
+        "blue-block",
+        "olde-timey-radio"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "olde-timey-radio",
+      "ingredients": [
+        "toilet",
+        "dungeon-door"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "olde-timey-hat",
+      "ingredients": [
+        "olde-timey-radio",
+        "brown-block"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "open-sign",
+      "ingredients": [
+        "street-sign",
+        "white-wallpaper"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "orange-block",
+      "ingredients": [
+        "bricks",
+        "poppy"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "orange-portal",
+      "ingredients": [
+        "high-tech-wall",
+        "orange-block"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "orange-stuff",
+      "ingredients": [
+        "coral",
+        "orange-block"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "orange-wallpaper",
+      "ingredients": [
+        "orange-block",
+        "magic-bacon-wallpaper"
+      ],
+      "tier": null,
+      "section": "Colored Wallpapers"
+    },
+    {
+      "output": "overalls",
+      "ingredients": [
+        "barrel",
+        "blue-wallpaper"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "painting-dink-duck",
+      "ingredients": [
+        "yellow-block",
+        "wooden-background"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "painting-yerfdog",
+      "ingredients": [
+        "wooden-background",
+        "white-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "parasol",
+      "ingredients": [
+        "clouds",
+        "fire-hydrant"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "password-door",
+      "ingredients": [
+        "jail-door",
+        "steel-block"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "patent-leather-shoes",
+      "ingredients": [
+        "brick-background",
+        "grey-block"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "peg-leg",
+      "ingredients": [
+        "rubber-ducky",
+        "wooden-table"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "pencil",
+      "ingredients": [
+        "yellow-block",
+        "wood-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "pickaxe",
+      "ingredients": [
+        "portcullis",
+        "cave-background"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "picket-fence",
+      "ingredients": [
+        "wooden-chair",
+        "white-block"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "pigtails",
+      "ingredients": [
+        "orange-block",
+        "daisy"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "pinball-bumper",
+      "ingredients": [
+        "blue-star-wallpaper",
+        "steel-block"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "pinball-sproinger",
+      "ingredients": [
+        "pinball-bumper",
+        "mushroom"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "pinstripe-pants",
+      "ingredients": [
+        "time-space-rupture",
+        "stripey-wallpaper"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "pinstripe-suit",
+      "ingredients": [
+        "time-space-rupture",
+        "rose"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "pirate-hat",
+      "ingredients": [
+        "cannon",
+        "mushroom"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "pitchfork",
+      "ingredients": [
+        "wrought-iron-fence",
+        "crappy-sign"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "plate-mail",
+      "ingredients": [
+        "portcullis",
+        "steel-block"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "plumbing",
+      "ingredients": [
+        "bathtub",
+        "green-block"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "pointy-sign",
+      "ingredients": [
+        "door",
+        "sign"
+      ],
+      "tier": 3,
+      "section": "Tier 3"
+    },
+    {
+      "output": "polka-dot-block",
+      "ingredients": [
+        "white-block",
+        "orange-block"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "poodle-skirt",
+      "ingredients": [
+        "das-red-balloon",
+        "dreamstone-block"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "poppy",
+      "ingredients": [
+        "rose",
+        "daisy"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "portcullis",
+      "ingredients": [
+        "dungeon-door",
+        "death-spikes"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "purple-bikini-top",
+      "ingredients": [
+        "purple-block",
+        "rose"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "purple-block",
+      "ingredients": [
+        "red-block",
+        "blue-block"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "purple-mohawk",
+      "ingredients": [
+        "picket-fence",
+        "purple-block"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "purple-stuff",
+      "ingredients": [
+        "coral",
+        "purple-block"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "purple-thong",
+      "ingredients": [
+        "purple-block",
+        "danger-sign"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "purple-wallpaper",
+      "ingredients": [
+        "purple-block",
+        "magic-bacon-wallpaper"
+      ],
+      "tier": null,
+      "section": "Colored Wallpapers"
+    },
+    {
+      "output": "race-end-flag",
+      "ingredients": [
+        "race-start-flag",
+        "checker-wallpaper"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "race-start-flag",
+      "ingredients": [
+        "blue-star-wallpaper",
+        "pointy-sign"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "rainbow-block",
+      "ingredients": [
+        "purple-block",
+        "orange-block"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "rainbow-wig",
+      "ingredients": [
+        "rainbow-block",
+        "fireplace"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "red-block",
+      "ingredients": [
+        "bricks",
+        "lava"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "red-bricks",
+      "ingredients": [
+        "red-block",
+        "bricks"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "red-coat",
+      "ingredients": [
+        "red-block",
+        "bush"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "red-hair",
+      "ingredients": [
+        "grass",
+        "red-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "red-riding-hood",
+      "ingredients": [
+        "red-block",
+        "mushroom"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "red-sportsball-jersey",
+      "ingredients": [
+        "big-old-up-arrow",
+        "white-block"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "red-sweatpants",
+      "ingredients": [
+        "big-old-down-arrow",
+        "white-block"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "red-wallpaper",
+      "ingredients": [
+        "red-block",
+        "magic-bacon-wallpaper"
+      ],
+      "tier": null,
+      "section": "Colored Wallpapers"
+    },
+    {
+      "output": "red-wood-wall",
+      "ingredients": [
+        "red-block",
+        "wooden-background"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "referee-shirt",
+      "ingredients": [
+        "black-block",
+        "white-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "refrigerator",
+      "ingredients": [
+        "ice",
+        "treasure-chest"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "ripper-wings",
+      "ingredients": [
+        "chandelier",
+        "devil-horns"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "robot-wants-dubstep",
+      "ingredients": [
+        "note-block",
+        "steel-block"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "rock-background",
+      "ingredients": [
+        "rock",
+        "door"
+      ],
+      "tier": 3,
+      "section": "Tier 3"
+    },
+    {
+      "output": "rocket-thruster",
+      "ingredients": [
+        "e-z-cook-oven",
+        "big-old-up-arrow"
+      ],
+      "tier": 14,
+      "section": "Tier 14"
+    },
+    {
+      "output": "rooster-hat",
+      "ingredients": [
+        "yellow-block",
+        "white-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "rose",
+      "ingredients": [
+        "grass",
+        "lava"
+      ],
+      "tier": 3,
+      "section": "Tier 3"
+    },
+    {
+      "output": "roshambo-block",
+      "ingredients": [
+        "dice-block",
+        "boulder"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "roulette-wheel",
+      "ingredients": [
+        "card-block",
+        "cuzco-wall-mount"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "rubber-ducky",
+      "ingredients": [
+        "bathtub",
+        "painting-dink-duck"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "ruby-slippers",
+      "ingredients": [
+        "red-block",
+        "disco-ball"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "rustic-fence",
+      "ingredients": [
+        "crappy-sign",
+        "picket-fence"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "sack-o-joy",
+      "ingredients": [
+        "note-block",
+        "disco-ball"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "saloon-doors",
+      "ingredients": [
+        "western-building",
+        "door"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "sandstone",
+      "ingredients": [
+        "cactus",
+        "dirt"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "santa-hat",
+      "ingredients": [
+        "red-block",
+        "white-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "santa-pants",
+      "ingredients": [
+        "lava",
+        "grey-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "santa-vest",
+      "ingredients": [
+        "lava",
+        "white-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "saturday-night-vest",
+      "ingredients": [
+        "golden-block",
+        "disco-ball"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "school-desk",
+      "ingredients": [
+        "orange-block",
+        "wooden-chair"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "science-station",
+      "ingredients": [
+        "toxic-waste-barrel",
+        "military-radio"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "scoreboard",
+      "ingredients": [
+        "table-lamp",
+        "bulletin-board"
+      ],
+      "tier": 14,
+      "section": "Tier 14"
+    },
+    {
+      "output": "screen-door",
+      "ingredients": [
+        "lattice-background",
+        "door"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "seaweed",
+      "ingredients": [
+        "bush",
+        "water-bucket"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "secret-of-growtopia",
+      "ingredients": [
+        "sheet-music-blank",
+        "secret-passage"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "secret-passage",
+      "ingredients": [
+        "wood-block",
+        "big-old-sideways-arrow"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "sexy-boxers",
+      "ingredients": [
+        "polka-dot-block",
+        "rose"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "shades",
+      "ingredients": [
+        "black-block",
+        "glass-pane"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "shallot-mustache",
+      "ingredients": [
+        "mushroom",
+        "grass"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "sheet-music-bass-note",
+      "ingredients": [
+        "sheet-music-blank",
+        "blue-block"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "sheet-music-blank",
+      "ingredients": [
+        "super-crate-box",
+        "white-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "sheet-music-drums",
+      "ingredients": [
+        "sheet-music-blank",
+        "brown-block"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "sheet-music-flat-bass",
+      "ingredients": [
+        "sheet-music-bass-note",
+        "rock"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "sheet-music-flat-piano",
+      "ingredients": [
+        "sheet-music-piano-note",
+        "rock"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "sheet-music-piano-note",
+      "ingredients": [
+        "sheet-music-blank",
+        "green-block"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "sheet-music-sharp-bass",
+      "ingredients": [
+        "sheet-music-bass-note",
+        "death-spikes"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "sheet-music-sharp-piano",
+      "ingredients": [
+        "sheet-music-piano-note",
+        "death-spikes"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "sheriffs-vest",
+      "ingredients": [
+        "jail-door",
+        "blue-star-wallpaper"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "shop-sign",
+      "ingredients": [
+        "western-banner",
+        "pastel-blue-block"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "showgirl-headdress",
+      "ingredients": [
+        "blue-star-wallpaper",
+        "portcullis"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "showgirl-leggings",
+      "ingredients": [
+        "blue-star-wallpaper",
+        "lattice-background"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "showgirl-top",
+      "ingredients": [
+        "blue-star-wallpaper",
+        "ice"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "sidewalk",
+      "ingredients": [
+        "red-bricks",
+        "grey-block"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "sign",
+      "ingredients": [
+        "cave-background",
+        "rock"
+      ],
+      "tier": 2,
+      "section": "Tier 2"
+    },
+    {
+      "output": "skeleton",
+      "ingredients": [
+        "grey-wallpaper",
+        "ice"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "ski-cap",
+      "ingredients": [
+        "blue-block",
+        "mushroom"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "slot-machine",
+      "ingredients": [
+        "roulette-wheel",
+        "yellow-wallpaper"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "snorkel",
+      "ingredients": [
+        "bathtub",
+        "glass-pane"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "snowy-rocks",
+      "ingredients": [
+        "ice",
+        "rock"
+      ],
+      "tier": null,
+      "section": "Winterfest Items"
+    },
+    {
+      "output": "space-helmet",
+      "ingredients": [
+        "fishbowl",
+        "checkpoint"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "spatula",
+      "ingredients": [
+        "stove",
+        "picket-fence"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "spikey-hair",
+      "ingredients": [
+        "death-spikes",
+        "yellow-block"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "sproingy-eyes",
+      "ingredients": [
+        "apple",
+        "pinball-sproinger"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "steel-block",
+      "ingredients": [
+        "purple-block",
+        "portcullis"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "steel-girder",
+      "ingredients": [
+        "steel-block",
+        "lattice-background"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "stinky-sock",
+      "ingredients": [
+        "mushroom",
+        "dirt"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "stone-wall",
+      "ingredients": [
+        "grey-block",
+        "rock"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "stove",
+      "ingredients": [
+        "lava-rock",
+        "high-tech-block"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "straw-hat",
+      "ingredients": [
+        "wheat",
+        "golden-halo"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "street-sign",
+      "ingredients": [
+        "pointy-sign",
+        "sidewalk"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "streetlamp",
+      "ingredients": [
+        "neon-lights",
+        "plumbing"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "stripey-wallpaper",
+      "ingredients": [
+        "green-block",
+        "aqua-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "sugar-cane",
+      "ingredients": [
+        "seaweed",
+        "happy-joy-plaque"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "super-crate-box",
+      "ingredients": [
+        "dirt",
+        "sign"
+      ],
+      "tier": 3,
+      "section": "Tier 3"
+    },
+    {
+      "output": "surgical-tool",
+      "ingredients": [
+        "high-tech-wall",
+        "biohazard-sign"
+      ],
+      "tier": null,
+      "section": "Surgical Tools"
+    },
+    {
+      "output": "sword",
+      "ingredients": [
+        "death-spikes",
+        "rock-background"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "table-lamp",
+      "ingredients": [
+        "blue-star-wallpaper",
+        "wooden-table"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "tan-shirt",
+      "ingredients": [
+        "rock-background",
+        "dirt"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "tangram-block",
+      "ingredients": [
+        "checker-wallpaper",
+        "grey-block"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "tavern-sign",
+      "ingredients": [
+        "art-deco-block",
+        "sign"
+      ],
+      "tier": 14,
+      "section": "Tier 14"
+    },
+    {
+      "output": "television",
+      "ingredients": [
+        "olde-timey-radio",
+        "saloon-doors"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "tenement-building",
+      "ingredients": [
+        "house-entrance",
+        "garbage"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "terracotta-pot",
+      "ingredients": [
+        "martian-tree",
+        "martian-soil"
+      ],
+      "tier": 3,
+      "section": "Tier 3"
+    },
+    {
+      "output": "the-darkness",
+      "ingredients": [
+        "steel-block",
+        "evil-bricks"
+      ],
+      "tier": 10,
+      "section": "Tier 10"
+    },
+    {
+      "output": "tie-dyed-shirt",
+      "ingredients": [
+        "polka-dot-block",
+        "checker-wallpaper"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "time-space-rupture",
+      "ingredients": [
+        "high-tech-wall",
+        "house-entrance"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "toilet",
+      "ingredients": [
+        "crappy-sign",
+        "brown-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "tomato",
+      "ingredients": [
+        "red-bricks",
+        "mud-glob"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "tombstone",
+      "ingredients": [
+        "skeleton",
+        "granite-block"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "tommygun",
+      "ingredients": [
+        "time-space-rupture",
+        "death-spikes"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "top-hat",
+      "ingredients": [
+        "black-block",
+        "mushroom"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "torch",
+      "ingredients": [
+        "sign",
+        "lava"
+      ],
+      "tier": 3,
+      "section": "Tier 3"
+    },
+    {
+      "output": "toxic-waste-barrel",
+      "ingredients": [
+        "acid",
+        "barrel"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "traffic-barricade",
+      "ingredients": [
+        "table-lamp",
+        "ladder"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "tramsmog-crystal",
+      "ingredients": [
+        "achievement-block",
+        "purple-block"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "treasure-chest",
+      "ingredients": [
+        "golden-block",
+        "dresser"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "tuxedo",
+      "ingredients": [
+        "grey-block",
+        "rose"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "tv-head",
+      "ingredients": [
+        "olde-timey-radio",
+        "wood-block"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "velvet-rope",
+      "ingredients": [
+        "copper-plumbing",
+        "big-old-sideways-arrow"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "venus-guytrap",
+      "ingredients": [
+        "magic-bacon-wallpaper",
+        "daisy"
+      ],
+      "tier": 11,
+      "section": "Tier 11"
+    },
+    {
+      "output": "victrola",
+      "ingredients": [
+        "time-space-rupture",
+        "olde-timey-radio"
+      ],
+      "tier": 13,
+      "section": "Tier 13"
+    },
+    {
+      "output": "viking-helmet",
+      "ingredients": [
+        "stone-wall",
+        "pointy-sign"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "wall-like-an-egyptian",
+      "ingredients": [
+        "sandstone",
+        "mud-glob"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "war-paint",
+      "ingredients": [
+        "tomato",
+        "fire-escape"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "water-bucket",
+      "ingredients": [
+        "toilet",
+        "aqua-block"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "western-banner",
+      "ingredients": [
+        "western-building",
+        "sign"
+      ],
+      "tier": 9,
+      "section": "Tier 9"
+    },
+    {
+      "output": "western-building",
+      "ingredients": [
+        "sand",
+        "tenement-building"
+      ],
+      "tier": 8,
+      "section": "Tier 8"
+    },
+    {
+      "output": "whatchamacallit",
+      "ingredients": [
+        "laboratory",
+        "compu-panel"
+      ],
+      "tier": 15,
+      "section": "Tier 15"
+    },
+    {
+      "output": "wheat",
+      "ingredients": [
+        "grass",
+        "sand"
+      ],
+      "tier": 3,
+      "section": "Tier 3"
+    },
+    {
+      "output": "white-beard",
+      "ingredients": [
+        "white-block",
+        "bush"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "white-bellbottoms",
+      "ingredients": [
+        "white-block",
+        "disco-ball"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "white-block",
+      "ingredients": [
+        "bricks",
+        "mushroom"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "white-wallpaper",
+      "ingredients": [
+        "white-block",
+        "magic-bacon-wallpaper"
+      ],
+      "tier": null,
+      "section": "Colored Wallpapers"
+    },
+    {
+      "output": "window",
+      "ingredients": [
+        "glass-pane",
+        "wooden-background"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "winter-gift",
+      "ingredients": [
+        "sheet-music-flat-bass",
+        "sheet-music-bass-note"
+      ],
+      "tier": null,
+      "section": "Winterfest Items"
+    },
+    {
+      "output": "winter-scarf",
+      "ingredients": [
+        "snowy-rocks",
+        "aqua-block"
+      ],
+      "tier": null,
+      "section": "Winterfest Items"
+    },
+    {
+      "output": "wizard-hat",
+      "ingredients": [
+        "bookcase",
+        "dreamstone-block"
+      ],
+      "tier": null,
+      "section": "Wizard Hats"
+    },
+    {
+      "output": "wizards-robe",
+      "ingredients": [
+        "purple-wallpaper",
+        "happy-joy-plaque"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "wood-block",
+      "ingredients": [
+        "dirt",
+        "lava"
+      ],
+      "tier": 2,
+      "section": "Tier 2"
+    },
+    {
+      "output": "wooden-background",
+      "ingredients": [
+        "grass",
+        "door"
+      ],
+      "tier": 3,
+      "section": "Tier 3"
+    },
+    {
+      "output": "wooden-chair",
+      "ingredients": [
+        "wooden-platform",
+        "toilet"
+      ],
+      "tier": 6,
+      "section": "Tier 6"
+    },
+    {
+      "output": "wooden-platform",
+      "ingredients": [
+        "wood-block",
+        "grass"
+      ],
+      "tier": 3,
+      "section": "Tier 3"
+    },
+    {
+      "output": "wooden-table",
+      "ingredients": [
+        "wooden-platform",
+        "wood-block"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "wooden-window",
+      "ingredients": [
+        "window",
+        "wooden-background"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "worthless-rags",
+      "ingredients": [
+        "dirt",
+        "mud-glob"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "wrought-iron-fence",
+      "ingredients": [
+        "portcullis",
+        "pencil"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    },
+    {
+      "output": "x-ray-specs",
+      "ingredients": [
+        "glass-pane",
+        "white-block"
+      ],
+      "tier": 5,
+      "section": "Tier 5"
+    },
+    {
+      "output": "yellow-block",
+      "ingredients": [
+        "bricks",
+        "daisy"
+      ],
+      "tier": 4,
+      "section": "Tier 4"
+    },
+    {
+      "output": "yellow-wallpaper",
+      "ingredients": [
+        "yellow-block",
+        "magic-bacon-wallpaper"
+      ],
+      "tier": null,
+      "section": "Colored Wallpapers"
+    },
+    {
+      "output": "yeonnalligi",
+      "ingredients": [
+        "blue-portal",
+        "orange-portal"
+      ],
+      "tier": null,
+      "section": "Winterfest Items"
+    },
+    {
+      "output": "zeta-reticulant-mask",
+      "ingredients": [
+        "military-radio",
+        "grey-wallpaper"
+      ],
+      "tier": 12,
+      "section": "Tier 12"
+    },
+    {
+      "output": "zombie-stompin-boots",
+      "ingredients": [
+        "grimstone",
+        "death-spikes"
+      ],
+      "tier": 7,
+      "section": "Tier 7"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "corrected-separator",
+      "line": 206,
+      "message": "Treated the second equals sign as a plus sign in “Screen Door = Lattice Background = Door”."
+    },
+    {
+      "code": "implicit-base",
+      "item": "buffalo",
+      "message": "“Buffalo” is referenced but has no recipe in the current list, so it is treated as a base item."
+    },
+    {
+      "code": "implicit-base",
+      "item": "compu-panel",
+      "message": "“Compu Panel” is referenced but has no recipe in the current list, so it is treated as a base item."
+    },
+    {
+      "code": "implicit-base",
+      "item": "e-z-cook-oven",
+      "message": "“E-Z Cook Oven” is referenced but has no recipe in the current list, so it is treated as a base item."
+    },
+    {
+      "code": "implicit-base",
+      "item": "pastel-blue-block",
+      "message": "“Pastel Blue Block” is referenced but has no recipe in the current list, so it is treated as a base item."
+    }
+  ]
+};
