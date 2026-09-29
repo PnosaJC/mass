@@ -186,41 +186,90 @@ function setActiveSuggestion(index) {
   searchInput.setAttribute('aria-activedescendant', options[activeSuggestion].id);
 }
 
-function buildTree(rootId) {
-  const nodes = [];
-  const branches = [];
-  const layers = [];
+function buildSharedGraph(rootId) {
+  const nodeByItem = new Map();
+  const parentsByItem = new Map();
   let nextNodeNumber = 0;
-  let maxDepth = 0;
 
-  function createNode(itemId, depth, ancestors) {
+  function collectNode(itemId) {
+    if (nodeByItem.has(itemId)) return nodeByItem.get(itemId);
+
     const node = {
-      key: `tree-node-${nextNodeNumber++}`,
+      key: `graph-node-${nextNodeNumber++}`,
       itemId,
-      depth,
       children: [],
+      encounterOrder: nextNodeNumber,
       x: 0,
       y: 0,
     };
-    nodes.push(node);
-    if (!layers[depth]) layers[depth] = [];
-    layers[depth].push(node);
-    maxDepth = Math.max(maxDepth, depth);
+    nodeByItem.set(itemId, node);
 
     const recipe = recipeByOutput.get(itemId);
-    const hasCycle = ancestors.has(itemId);
-    if (!recipe || hasCycle) return node;
+    if (!recipe) return node;
 
-    const nextAncestors = new Set(ancestors);
-    nextAncestors.add(itemId);
-    const leftChild = createNode(recipe.ingredients[0], depth + 1, nextAncestors);
-    const rightChild = createNode(recipe.ingredients[1], depth + 1, nextAncestors);
-    node.children = [leftChild, rightChild];
-    branches.push({ parent: node, children: node.children });
+    node.children = recipe.ingredients.map((ingredientId) => {
+      const child = collectNode(ingredientId);
+      if (!parentsByItem.has(ingredientId)) parentsByItem.set(ingredientId, new Set());
+      parentsByItem.get(ingredientId).add(itemId);
+      return child;
+    });
     return node;
   }
 
-  const root = createNode(rootId, 0, new Set());
+  const root = collectNode(rootId);
+  const nodes = [...nodeByItem.values()];
+  const branches = nodes
+    .filter((node) => node.children.length > 0)
+    .map((parent) => ({ parent, children: parent.children }));
+
+  const visited = new Set();
+  const topologicalOrder = [];
+  function visit(node) {
+    if (visited.has(node.itemId)) return;
+    visited.add(node.itemId);
+    node.children.forEach(visit);
+    topologicalOrder.push(node);
+  }
+  visit(root);
+  topologicalOrder.reverse();
+
+  const depthByItem = new Map([[rootId, 0]]);
+  topologicalOrder.forEach((node) => {
+    const parentDepth = depthByItem.get(node.itemId) ?? 0;
+    node.children.forEach((child) => {
+      depthByItem.set(
+        child.itemId,
+        Math.max(depthByItem.get(child.itemId) ?? 0, parentDepth + 1),
+      );
+    });
+  });
+
+  const layers = [];
+  nodes.forEach((node) => {
+    const depth = depthByItem.get(node.itemId) ?? 0;
+    if (!layers[depth]) layers[depth] = [];
+    layers[depth].push(node);
+  });
+
+  const horizontalRank = new Map([[rootId, 0.5]]);
+  layers.forEach((layer, depth) => {
+    if (depth > 0) {
+      layer.sort((left, right) => {
+        const averageParentRank = (node) => {
+          const parents = [...(parentsByItem.get(node.itemId) ?? [])];
+          return parents.reduce((sum, parentId) => sum + (horizontalRank.get(parentId) ?? 0.5), 0)
+            / Math.max(parents.length, 1);
+        };
+        return averageParentRank(left) - averageParentRank(right)
+          || left.encounterOrder - right.encounterOrder;
+      });
+    }
+    layer.forEach((node, index) => {
+      horizontalRank.set(node.itemId, (index + 0.5) / layer.length);
+    });
+  });
+
+  const maxDepth = layers.length - 1;
   const largestLayer = Math.max(...layers.map((layer) => layer.length));
   const worldWidth = largestLayer * NODE_WIDTH + WORLD_MARGIN * 2;
   const desiredWorldHeight = worldWidth * TARGET_TREE_ASPECT;
@@ -243,7 +292,12 @@ function buildTree(rootId) {
     root,
     nodes,
     branches,
-    levels: maxDepth + 1,
+    sharedItemIds: new Set(
+      [...parentsByItem]
+        .filter(([, parents]) => parents.size > 1)
+        .map(([itemId]) => itemId),
+    ),
+    levels: layers.length,
     worldWidth,
     worldHeight,
   };
@@ -278,7 +332,7 @@ function getInitials(name) {
 }
 
 function renderTree(rootId) {
-  const graph = buildTree(rootId);
+  const graph = buildSharedGraph(rootId);
   currentLayout = graph;
   scene.replaceChildren();
 
@@ -298,6 +352,8 @@ function renderTree(rootId) {
       scene.append(
         createSvgElement('path', {
           class: 'tree-edge',
+          'data-from': parent.itemId,
+          'data-to': child.itemId,
           d: `M ${parent.x} ${branchY} C ${parent.x} ${middleY}, ${child.x} ${middleY}, ${child.x} ${targetY}`,
         }),
       );
@@ -314,8 +370,10 @@ function renderTree(rootId) {
     const item = itemById.get(itemId);
     const position = treeNode;
     const isRoot = treeNode === graph.root;
+    const isShared = graph.sharedItemIds.has(itemId);
     const node = createSvgElement('g', {
-      class: `tree-node ${isRoot ? 'is-selected' : item.isBase ? 'is-base' : 'is-recipe'}`,
+      class: `tree-node ${isRoot ? 'is-selected' : item.isBase ? 'is-base' : 'is-recipe'} ${isShared ? 'is-shared' : ''}`,
+      'data-item-id': itemId,
       transform: `translate(${position.x - NODE_WIDTH / 2} ${position.y - NODE_HEIGHT / 2})`,
       role: 'button',
       tabindex: '0',
@@ -381,7 +439,7 @@ function renderTree(rootId) {
   }
 
   const baseCount = graph.nodes.filter((node) => node.children.length === 0).length;
-  treeMeta.innerHTML = `<strong>${graph.nodes.length}</strong> item nodes <i></i> <strong>${graph.levels}</strong> levels <i></i> <strong>${baseCount}</strong> base endpoints`;
+  treeMeta.innerHTML = `<strong>${graph.nodes.length}</strong> unique items <i></i> <strong>${graph.levels}</strong> levels <i></i> <strong>${graph.sharedItemIds.size}</strong> shared seeds <i></i> <strong>${baseCount}</strong> base items`;
   requestAnimationFrame(fitTree);
 }
 
