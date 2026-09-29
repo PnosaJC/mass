@@ -6,7 +6,7 @@ A dependency-free static website that turns a plain-text Growtopia recipe list i
 
 Open `index.html` directly in a browser. The generated JavaScript data file means no local server is required.
 
-Search for an item to display its two direct ingredients. Click a recipe child to expand its own two ingredients; click it again to hide that branch. Repeated seeds render once with every applicable recipe connected to the shared node. Drag to pan, scroll to zoom, or use the viewport controls.
+Search for an item to display its two direct ingredients. Click a recipe child to expand its own two ingredients; click it again to hide that branch. Repeated seeds are displayed as separate nodes for each recipe branch, and every copy expands or hides independently. Drag to pan, scroll to zoom, or use the viewport controls.
 
 ## Update recipes
 

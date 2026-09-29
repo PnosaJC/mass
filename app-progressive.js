@@ -104,7 +104,7 @@ const scene = document.querySelector('#tree-scene');
 let suggestionItems = [];
 let activeSuggestion = -1;
 let selectedId = null;
-let expandedItemIds = new Set();
+let expandedNodeKeys = new Set();
 let currentLayout = null;
 let view = { scale: 1, x: 0, y: 0 };
 let dragState = null;
@@ -187,65 +187,47 @@ function setActiveSuggestion(index) {
   searchInput.setAttribute('aria-activedescendant', options[activeSuggestion].id);
 }
 
-function buildSharedGraph(rootId) {
-  const nodeByItem = new Map();
-  const parentsByItem = new Map();
+function buildRecipeTree(rootId) {
+  const nodes = [];
+  const branches = [];
   const columnWidth = NODE_WIDTH + COLUMN_GAP;
-  let nextNodeNumber = 0;
 
-  function collectNode(itemId, layoutDepth) {
-    if (nodeByItem.has(itemId)) return nodeByItem.get(itemId);
-
+  function createNode(itemId, key, depth, ancestors) {
     const node = {
-      key: `graph-node-${nextNodeNumber++}`,
+      key,
       itemId,
       children: [],
-      layoutChildren: [],
       childOffsets: [],
       leftContour: [0],
       rightContour: [0],
-      layoutDepth,
+      depth,
       x: 0,
       y: 0,
     };
-    nodeByItem.set(itemId, node);
+    nodes.push(node);
 
     const recipe = recipeByOutput.get(itemId);
-    if (!recipe || !expandedItemIds.has(itemId)) return node;
+    if (!recipe || !expandedNodeKeys.has(key) || ancestors.has(itemId)) return node;
 
-    recipe.ingredients.forEach((ingredientId) => {
-      const isNewNode = !nodeByItem.has(ingredientId);
-      const child = collectNode(ingredientId, layoutDepth + 1);
-      node.children.push(child);
-      if (isNewNode) node.layoutChildren.push(child);
-      if (!parentsByItem.has(ingredientId)) parentsByItem.set(ingredientId, new Set());
-      parentsByItem.get(ingredientId).add(itemId);
-    });
+    const nextAncestors = new Set(ancestors);
+    nextAncestors.add(itemId);
+    node.children = recipe.ingredients.map((ingredientId, index) =>
+      createNode(ingredientId, `${key}.${index}`, depth + 1, nextAncestors),
+    );
+    branches.push({ parent: node, children: node.children });
     return node;
   }
 
-  const root = collectNode(rootId, 0);
-  const nodes = [...nodeByItem.values()];
-  const branches = nodes
-    .filter((node) => node.children.length > 0)
-    .map((parent) => ({ parent, children: parent.children }));
+  const root = createNode(rootId, 'root', 0, new Set());
 
   function measureSubtree(node) {
-    node.layoutChildren.forEach(measureSubtree);
-    if (node.layoutChildren.length === 0) return;
+    node.children.forEach(measureSubtree);
+    if (node.children.length === 0) return;
 
-    if (node.layoutChildren.length === 1) {
-      const child = node.layoutChildren[0];
-      node.childOffsets = [0];
-      node.leftContour = [0, ...child.leftContour];
-      node.rightContour = [0, ...child.rightContour];
-      return;
-    }
-
-    const [leftChild, rightChild] = node.layoutChildren;
-    const sharedDepth = Math.min(leftChild.rightContour.length, rightChild.leftContour.length);
+    const [leftChild, rightChild] = node.children;
+    const overlappingDepth = Math.min(leftChild.rightContour.length, rightChild.leftContour.length);
     let separation = columnWidth;
-    for (let level = 0; level < sharedDepth; level += 1) {
+    for (let level = 0; level < overlappingDepth; level += 1) {
       separation = Math.max(
         separation,
         leftChild.rightContour[level] - rightChild.leftContour[level] + columnWidth,
@@ -261,7 +243,7 @@ function buildSharedGraph(rootId) {
     for (let level = 0; level < childDepth; level += 1) {
       const leftEdges = [];
       const rightEdges = [];
-      node.layoutChildren.forEach((child, index) => {
+      node.children.forEach((child, index) => {
         if (level >= child.leftContour.length) return;
         leftEdges.push(child.leftContour[level] + offsets[index]);
         rightEdges.push(child.rightContour[level] + offsets[index]);
@@ -275,8 +257,8 @@ function buildSharedGraph(rootId) {
 
   function placeSubtree(node, x) {
     node.x = x;
-    node.y = WORLD_MARGIN + NODE_HEIGHT / 2 + node.layoutDepth * ROW_GAP;
-    node.layoutChildren.forEach((child, index) => {
+    node.y = WORLD_MARGIN + NODE_HEIGHT / 2 + node.depth * ROW_GAP;
+    node.children.forEach((child, index) => {
       placeSubtree(child, x + node.childOffsets[index]);
     });
   }
@@ -289,16 +271,11 @@ function buildSharedGraph(rootId) {
     node.x += horizontalShift;
   });
 
-  const levels = Math.max(...nodes.map((node) => node.layoutDepth)) + 1;
+  const levels = Math.max(...nodes.map((node) => node.depth)) + 1;
   return {
     root,
     nodes,
     branches,
-    sharedItemIds: new Set(
-      [...parentsByItem]
-        .filter(([, parents]) => parents.size > 1)
-        .map(([itemId]) => itemId),
-    ),
     levels,
     worldWidth: rightEdge - leftEdge + WORLD_MARGIN * 2,
     worldHeight: (levels - 1) * ROW_GAP + NODE_HEIGHT + WORLD_MARGIN * 2,
@@ -334,7 +311,7 @@ function getInitials(name) {
 }
 
 function renderTree(rootId) {
-  const graph = buildSharedGraph(rootId);
+  const graph = buildRecipeTree(rootId);
   currentLayout = graph;
   scene.replaceChildren();
 
@@ -356,6 +333,8 @@ function renderTree(rootId) {
           class: 'tree-edge',
           'data-from': parent.itemId,
           'data-to': child.itemId,
+          'data-from-key': parent.key,
+          'data-to-key': child.key,
           d: `M ${parent.x} ${branchY} C ${parent.x} ${middleY}, ${child.x} ${middleY}, ${child.x} ${targetY}`,
         }),
       );
@@ -372,9 +351,8 @@ function renderTree(rootId) {
     const item = itemById.get(itemId);
     const position = treeNode;
     const isRoot = treeNode === graph.root;
-    const isShared = graph.sharedItemIds.has(itemId);
     const hasRecipe = recipeByOutput.has(itemId);
-    const isExpanded = expandedItemIds.has(itemId);
+    const isExpanded = expandedNodeKeys.has(treeNode.key);
     const canExpand = hasRecipe && !isExpanded;
     const canHide = hasRecipe && isExpanded && !isRoot;
     const canToggle = canExpand || canHide;
@@ -386,8 +364,9 @@ function renderTree(rootId) {
           ? 'is-collapsed'
           : 'is-recipe';
     const node = createSvgElement('g', {
-      class: `tree-node ${nodeStateClass} ${canToggle ? 'is-toggleable' : ''} ${isShared ? 'is-shared' : ''}`,
+      class: `tree-node ${nodeStateClass} ${canToggle ? 'is-toggleable' : ''}`,
       'data-item-id': itemId,
+      'data-node-key': treeNode.key,
       'data-recipe-state': item.isBase ? 'base' : isExpanded ? 'expanded' : 'collapsed',
       transform: `translate(${position.x - NODE_WIDTH / 2} ${position.y - NODE_HEIGHT / 2})`,
       role: canToggle ? 'button' : 'img',
@@ -438,8 +417,8 @@ function renderTree(rootId) {
 
     if (canToggle) {
       const toggleRecipe = () => {
-        if (isExpanded) expandedItemIds.delete(itemId);
-        else expandedItemIds.add(itemId);
+        if (isExpanded) expandedNodeKeys.delete(treeNode.key);
+        else expandedNodeKeys.add(treeNode.key);
         renderTree(selectedId);
       };
       node.addEventListener('pointerdown', (event) => event.stopPropagation());
@@ -477,7 +456,7 @@ function renderTree(rootId) {
 
   const baseCount = graph.nodes.filter((node) => itemById.get(node.itemId).isBase).length;
   const collapsedCount = graph.nodes.filter((node) =>
-    recipeByOutput.has(node.itemId) && !expandedItemIds.has(node.itemId)).length;
+    recipeByOutput.has(node.itemId) && !expandedNodeKeys.has(node.key)).length;
   treeMeta.innerHTML = `<strong>${graph.nodes.length}</strong> visible items <i></i> <strong>${graph.levels}</strong> levels <i></i> <strong>${collapsedCount}</strong> recipes to expand <i></i> <strong>${baseCount}</strong> base items`;
   requestAnimationFrame(fitTree);
 }
@@ -513,7 +492,7 @@ function selectItem(itemId, options = {}) {
   const item = itemById.get(itemId);
   if (!item) return;
   selectedId = itemId;
-  expandedItemIds = recipeByOutput.has(itemId) ? new Set([itemId]) : new Set();
+  expandedNodeKeys = recipeByOutput.has(itemId) ? new Set(['root']) : new Set();
   searchInput.value = item.name;
   clearSearch.hidden = false;
   closeSuggestions();
